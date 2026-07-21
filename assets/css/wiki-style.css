@@ -1,0 +1,306 @@
+/* Wikipedia-inspired Dashboard Styles */
+:root {
+    --background: #f6f6f6;
+    --header-bg: #f8f9fa;
+    --border-color: #a2a9b1;
+    --text-primary: #202122;
+    --text-secondary: #54595d;
+    --link-color: #0645ad;
+    --link-hover: #0b0080;
+    --content-bg: #ffffff;
+    --sidebar-bg: #f6f6f6;
+    --highlight: #eaf3ff;
+    --success: #00af89;
+    --warning: #ffcc33;
+    --danger: #ff6b6b;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--background);
+    font-size: 0.875rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Layout */
+.wiki-container {
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.wiki-header {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+.wiki-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.wiki-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.wiki-search {
+    flex: 0 1 500px;
+    position: relative;
+}
+
+.wiki-search input {
+    width: 100%;
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    font-size: 0.875rem;
+}
+
+.wiki-search button {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+/* Sidebar */
+.wiki-sidebar {
+    width: 200px;
+    flex-shrink: 0;
+    background-color: var(--sidebar-bg);
+    padding: 1rem 0;
+    border-right: 1px solid var(--border-color);
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
+.wiki-nav h3 {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--text-secondary);
+    padding: 0.5rem 1rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.wiki-nav ul {
+    list-style: none;
+}
+
+.wiki-nav li a {
+    display: block;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    color: var(--text-primary);
+    border-left: 3px solid transparent;
+}
+
+.wiki-nav li a:hover {
+    background-color: var(--highlight);
+    text-decoration: none;
+}
+
+.wiki-nav li.active a {
+    background-color: var(--highlight);
+    border-left-color: var(--link-color);
+    font-weight: bold;
+}
+
+/* Main Content */
+.wiki-main {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: var(--content-bg);
+    border: 1px solid var(--border-color);
+    border-top: none;
+    margin-bottom: 1rem;
+}
+
+.wiki-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Cards */
+.wiki-card {
+    background-color: var(--content-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.wiki-card-header {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wiki-card-body {
+    padding: 1rem;
+}
+
+/* Tables */
+.wiki-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.wiki-table th,
+.wiki-table td {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.wiki-table th {
+    background-color: var(--header-bg);
+    font-weight: bold;
+}
+
+.wiki-table tr:nth-child(even) {
+    background-color: var(--sidebar-bg);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    background-color: var(--header-bg);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 0.875rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-primary {
+    background-color: #36c;
+    color: white;
+    border-color: #36c;
+}
+
+.btn-primary:hover {
+    background-color: #2a4b8d;
+    border-color: #2a4b8d;
+    color: white;
+    text-decoration: none;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    font-size: 0.875rem;
+}
+
+/* Status indicators */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-success {
+    background-color: #e6f7f0;
+    color: var(--success);
+}
+
+.status-warning {
+    background-color: #fff8e6;
+    color: #d5a000;
+}
+
+.status-danger {
+    background-color: #ffebee;
+    color: var(--danger);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .wiki-sidebar {
+        width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wiki-container {
+        flex-direction: column;
+    }
+    
+    .wiki-sidebar {
+        width: 100%;
+        position: static;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .wiki-main {
+        margin-top: 1rem;
+    }
+}
+
+/* Utility Classes */
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-5 { margin-bottom: 2rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.text-muted { color: var(--text-secondary); }
+.text-center { text-align: center; }

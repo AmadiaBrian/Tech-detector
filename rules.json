@@ -1,0 +1,2470 @@
+{
+  "WordPress": [
+      { "type": "html", "pattern": "wp-content", "i": true },
+      { "type": "html", "pattern": "wp-includes", "i": true },
+      { "type": "urlpath", "pattern": "wp-login.php", "i": true },
+      { "type": "html", "pattern": "wp-json/", "i": true },
+      { "type": "html", "pattern": "wp-admin/", "i": true },
+      { "type": "html", "pattern": "wp-embed", "i": true }
+  ],
+  "Drupal": [
+      { "type": "html", "pattern": "Drupal.settings", "i": true },
+      { "type": "html", "pattern": "sites/default", "i": true },
+      { "type": "html", "pattern": "drupal.js", "i": true },
+      { "type": "header", "pattern": "X-Generator: Drupal", "i": true },
+      { "type": "html", "pattern": "core/misc/drupal", "i": true }
+  ],
+  "Joomla": [
+      { "type": "html", "pattern": "Joomla!", "i": true },
+      { "type": "html", "pattern": "index.php?option=com_", "i": true },
+      { "type": "html", "pattern": "media/system/js/mootools", "i": true },
+      { "type": "html", "pattern": "templates/.*/css/template.css", "i": true },
+      { "type": "header", "pattern": "X-Content-Encoded-By: Joomla!", "i": true }
+  ],
+  "Laravel": [
+      { "type": "cookie", "pattern": "laravel_session", "i": true },
+      { "type": "html", "pattern": "laravel", "i": false },
+      { "type": "header", "pattern": "X-Powered-By: Laravel", "i": true },
+      { "type": "html", "pattern": "mix\\.js/", "i": true },
+      { "type": "html", "pattern": "app\\.js\\?id=", "i": true },
+      { "type": "html", "pattern": "laravel\\.js", "i": true },
+      { "type": "html", "pattern": "mix\\.js", "i": true }
+  ],
+  "Magento": [
+      { "type": "html", "pattern": "Mage.Cookies", "i": true },
+      { "type": "html", "pattern": "varien", "i": true }
+  ],
+  "jQuery": [
+      { "type": "html", "pattern": "jquery.js", "i": true },
+      { "type": "html", "pattern": "jquery.min.js", "i": true }
+  ],
+  "PHP": [
+      { "type": "header", "pattern": "X-Powered-By: PHP", "i": true },
+      { "type": "header", "pattern": "X-PHP-Version", "i": true },
+      { "type": "html", "pattern": ".php?id=", "i": true },
+      { "type": "html", "pattern": "PHPSESSID", "i": true }
+  ],
+  "Nginx": [
+      { "type": "header", "pattern": "Server: nginx", "i": true }
+  ],
+  "Apache": [
+      { "type": "header", "pattern": "Server: Apache", "i": true }
+  ],
+  "React": [
+      { "type": "html", "pattern": "react\\.js", "i": true },
+      { "type": "html", "pattern": "react-dom\\.js", "i": true },
+      { "type": "html", "pattern": "data-reactroot", "i": true },
+      { "type": "html", "pattern": "data-reactid", "i": true },
+      { "type": "html", "pattern": "react", "i": true },
+      { "type": "html", "pattern": "create-react-app", "i": true },
+      { "type": "html", "pattern": "reactrouter", "i": true },
+      { "type": "html", "pattern": "ReactDOM", "i": true },
+      { "type": "html", "pattern": "useState", "i": true },
+      { "type": "html", "pattern": "useEffect", "i": true },
+      { "type": "html", "pattern": "@react", "i": true }
+  ],
+  "Next.js": [
+      { "type": "html", "pattern": "__next", "i": true },
+      { "type": "html", "pattern": "_next/static", "i": true },
+      { "type": "html", "pattern": "next/link", "i": true },
+      { "type": "html", "pattern": "next/image", "i": true },
+      { "type": "html", "pattern": "next/script", "i": true },
+      { "type": "html", "pattern": "__NEXT_DATA__", "i": true },
+      { "type": "html", "pattern": "next/config", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Next.js", "i": true }
+  ],
+  "Nuxt.js": [
+      { "type": "html", "pattern": "nuxt", "i": true },
+      { "type": "html", "pattern": "_nuxt", "i": true },
+      { "type": "html", "pattern": "__NUXT__", "i": true },
+      { "type": "html", "pattern": "nuxt-link", "i": true },
+      { "type": "html", "pattern": "@nuxt/", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Nuxt", "i": true }
+  ],
+  "Svelte": [
+      { "type": "html", "pattern": "svelte", "i": true },
+      { "type": "html", "pattern": "svelte-", "i": true },
+      { "type": "html", "pattern": "@svelte/", "i": true },
+      { "type": "html", "pattern": "svelte:component", "i": true },
+      { "type": "html", "pattern": "svelte:self", "i": true }
+  ],
+  "Vue.js": [
+      { "type": "html", "pattern": "vue\\.js", "i": true },
+      { "type": "html", "pattern": "vue\\.min\\.js", "i": true },
+      { "type": "html", "pattern": "data-v-", "i": true },
+      { "type": "html", "pattern": "vue-style", "i": true },
+      { "type": "html", "pattern": "v-bind:", "i": true },
+      { "type": "html", "pattern": "data-vue-meta", "i": true },
+      { "type": "html", "pattern": "data-vmid", "i": true },
+      { "type": "html", "pattern": "<div id=\"app\">", "i": true }
+  ],
+  "Angular": [
+      { "type": "html", "pattern": "angular\\.js", "i": true },
+      { "type": "html", "pattern": "ng-app", "i": true },
+      { "type": "html", "pattern": "ng-", "i": true },
+      { "type": "html", "pattern": "_ngcontent-", "i": true },
+      { "type": "html", "pattern": "zone\\.js", "i": true },
+      { "type": "html", "pattern": "@angular/", "i": true },
+      { "type": "html", "pattern": "angular", "i": true },
+      { "type": "html", "pattern": "ng-controller", "i": true },
+      { "type": "html", "pattern": "ng-model", "i": true },
+      { "type": "html", "pattern": "ng-repeat", "i": true },
+      { "type": "html", "pattern": "ng-if", "i": true },
+      { "type": "html", "pattern": "ng-click", "i": true },
+      { "type": "html", "pattern": "ng-show", "i": true },
+      { "type": "html", "pattern": "ng-hide", "i": true },
+      { "type": "html", "pattern": "ng-class", "i": true },
+      { "type": "html", "pattern": "ng-style", "i": true },
+      { "type": "html", "pattern": "ng-bind", "i": true },
+      { "type": "html", "pattern": "ng-src", "i": true },
+      { "type": "html", "pattern": "ng-href", "i": true },
+      { "type": "html", "pattern": "ng-change", "i": true },
+      { "type": "html", "pattern": "ng-submit", "i": true },
+      { "type": "html", "pattern": "ng-options", "i": true },
+      { "type": "html", "pattern": "ng-init", "i": true },
+      { "type": "html", "pattern": "ng-include", "i": true },
+      { "type": "html", "pattern": "ng-switch", "i": true },
+      { "type": "html", "pattern": "ng-transclude", "i": true },
+      { "type": "html", "pattern": "ng-cloak", "i": true },
+      { "type": "html", "pattern": "ng-animate", "i": true },
+      { "type": "html", "pattern": "ng-touch", "i": true },
+      { "type": "html", "pattern": "ng-sanitize", "i": true },
+      { "type": "html", "pattern": "ng-route", "i": true },
+      { "type": "html", "pattern": "ng-resource", "i": true },
+      { "type": "html", "pattern": "ng-cookies", "i": true },
+      { "type": "html", "pattern": "ng-messages", "i": true },
+      { "type": "html", "pattern": "ng-form", "i": true },
+      { "type": "html", "pattern": "ng-pattern", "i": true },
+      { "type": "html", "pattern": "ng-maxlength", "i": true },
+      { "type": "html", "pattern": "ng-minlength", "i": true },
+      { "type": "html", "pattern": "ng-required", "i": true },
+      { "type": "html", "pattern": "ng-disabled", "i": true },
+      { "type": "html", "pattern": "ng-readonly", "i": true },
+      { "type": "html", "pattern": "ng-checked", "i": true },
+      { "type": "html", "pattern": "ng-selected", "i": true },
+      { "type": "html", "pattern": "ng-multiple", "i": true },
+      { "type": "html", "pattern": "ng-true-value", "i": true },
+      { "type": "html", "pattern": "ng-false-value", "i": true },
+      { "type": "html", "pattern": "ng-value", "i": true },
+      { "type": "html", "pattern": "ng-list", "i": true },
+      { "type": "html", "pattern": "ng-trim", "i": true },
+      { "type": "html", "pattern": "ng-non-bindable", "i": true },
+      { "type": "html", "pattern": "ng-pluralize", "i": true },
+      { "type": "html", "pattern": "ng-bind-html", "i": true },
+      { "type": "html", "pattern": "ng-bind-template", "i": true },
+      { "type": "html", "pattern": "ng-csp", "i": true },
+      { "type": "html", "pattern": "ng-swipe-left", "i": true },
+      { "type": "html", "pattern": "ng-swipe-right", "i": true },
+      { "type": "html", "pattern": "ng-swipe-up", "i": true },
+      { "type": "html", "pattern": "ng-swipe-down", "i": true },
+      { "type": "html", "pattern": "ng-tap", "i": true },
+      { "type": "html", "pattern": "ng-hold", "i": true },
+      { "type": "html", "pattern": "ng-press", "i": true },
+      { "type": "html", "pattern": "ng-release", "i": true },
+      { "type": "html", "pattern": "ng-dbltap", "i": true },
+      { "type": "html", "pattern": "ng-drag", "i": true },
+      { "type": "html", "pattern": "ng-drop", "i": true },
+      { "type": "html", "pattern": "ng-enter", "i": true },
+      { "type": "html", "pattern": "ng-leave", "i": true },
+      { "type": "html", "pattern": "ng-move", "i": true },
+      { "type": "html", "pattern": "ng-animate-children", "i": true },
+      { "type": "html", "pattern": "ng-animate-swap", "i": true },
+      { "type": "html", "pattern": "ng-animate-ref", "i": true },
+      { "type": "html", "pattern": "ng-animate-event", "i": true },
+      { "type": "html", "pattern": "ng-view", "i": true },
+      { "type": "html", "pattern": "ng-template", "i": true },
+      { "type": "html", "pattern": "ng-switch-when", "i": true },
+      { "type": "html", "pattern": "ng-switch-default", "i": true },
+      { "type": "html", "pattern": "ng-message", "i": true },
+      { "type": "html", "pattern": "ng-message-exp", "i": true },
+      { "type": "html", "pattern": "ng-message-include", "i": true },
+      { "type": "html", "pattern": "ng-model-options", "i": true }
+  ],
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async-validators", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-formatter", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-parser", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-async", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-options", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-watchers", "i": true },
+      { "type": "html", "pattern": "ng-model-view-model-validators", "i": true      
+  ],
+  "Bootstrap": [
+      { "type": "html", "pattern": "bootstrap\\.js", "i": true },
+      { "type": "html", "pattern": "bootstrap\\.min\\.js", "i": true },
+      { "type": "html", "pattern": "bootstrap\\.css", "i": true },
+      { "type": "html", "pattern": "data-bs-", "i": true },
+      { "type": "html", "pattern": "col-md-", "i": true }
+  ],
+  "Google Tag Manager": [
+      { "type": "html", "pattern": "googletagmanager\\.com/gtm\\.js", "i": true },
+      { "type": "html", "pattern": "GTM-", "i": false },
+      { "type": "html", "pattern": "dataLayer = \\[", "i": true },
+      { "type": "html", "pattern": "googletagmanager\\.com/ns\\.html", "i": true }
+  ],
+  "Socket.IO": [
+      { "type": "html", "pattern": "socket\\.io", "i": true },
+      { "type": "html", "pattern": "io\\(", "i": true },
+      { "type": "header", "pattern": "X-Socket-Id", "i": true },
+      { "type": "html", "pattern": "socket\\.io\\.js", "i": true }
+  ],
+  "HLS.js": [
+      { "type": "html", "pattern": "hls\\.js", "i": true },
+      { "type": "html", "pattern": "Hls\\.isSupported", "i": true },
+      { "type": "html", "pattern": "new Hls\\(", "i": true },
+      { "type": "html", "pattern": "hls\\.min\\.js", "i": true }
+  ],
+  "Progressive Web App": [
+      { "type": "html", "pattern": "<link.*manifest\\.json", "i": true },
+      { "type": "html", "pattern": "serviceWorker\\.register", "i": true },
+      { "type": "header", "pattern": "Service-Worker-Allowed", "i": true },
+      { "type": "html", "pattern": "<meta name=\\\"theme-color\\\"", "i": true },
+      { "type": "html", "pattern": "<meta name=\"apple-mobile-web-app-capable\"", "i": true },
+      { "type": "html", "pattern": "WebAppManifest", "i": true }
+  ],
+  "Google Analytics": [
+      { "type": "html", "pattern": "googletagmanager\\.com/gtag/js", "i": true },
+      { "type": "html", "pattern": "google-analytics\\.com/analytics.js", "i": true },
+      { "type": "html", "pattern": "UA-\\d{4,10}-\\d{1,4}", "i": true },
+      { "type": "html", "pattern": "G-[A-Z0-9]{10}", "i": true }
+  ],
+  "Cloudflare": [
+      { "type": "header", "pattern": "Server: cloudflare", "i": true },
+      { "type": "header", "pattern": "CF-RAY", "i": false },
+      { "type": "html", "pattern": "cloudflare\\.com/", "i": true },
+      { "type": "header", "pattern": "CF-Worker", "i": true },
+      { "type": "header", "pattern": "CF-Connecting-IP", "i": true },
+      { "type": "header", "pattern": "CF-IPCountry", "i": true },
+      { "type": "header", "pattern": "X-Worker-Name", "i": true },
+      { "type": "header", "pattern": "X-Worker-Start", "i": true }
+  ],
+  "Node.js": [
+      { "type": "header", "pattern": "X-Powered-By: Express", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: nodejs", "i": true },
+      { "type": "html", "pattern": "__NEXT_DATA__", "i": true },
+      { "type": "html", "pattern": "express()", "i": true },
+      { "type": "html", "pattern": "require\\(['\"]express['\"]\\)", "i": true }
+  ],
+  "Express.js": [
+      { "type": "header", "pattern": "X-Powered-By: Express", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Express.js", "i": true },
+      { "type": "html", "pattern": "express()", "i": true },
+      { "type": "html", "pattern": "express\\.min\\.js", "i": true }
+  ],
+  "Ruby on Rails": [
+      { "type": "header", "pattern": "X-Runtime: Ruby", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Phusion Passenger", "i": true },
+      { "type": "html", "pattern": "csrf-token", "i": true },
+      { "type": "html", "pattern": "rails-ujs", "i": true },
+      { "type": "html", "pattern": "data-turbo", "i": true },
+      { "type": "html", "pattern": "data-rails", "i": true }
+  ],
+  "Django": [
+      { "type": "header", "pattern": "X-Frame-Options: SAMEORIGIN", "i": true },
+      { "type": "header", "pattern": "Set-Cookie: csrftoken=", "i": true },
+      { "type": "html", "pattern": "csrfmiddlewaretoken", "i": true },
+      { "type": "html", "pattern": "Django", "i": true },
+      { "type": "html", "pattern": "django\\.js", "i": true }
+  ],
+  "Flask": [
+      { "type": "header", "pattern": "Server: Werkzeug", "i": true },
+      { "type": "html", "pattern": "flask\\.min\\.js", "i": true },
+      { "type": "html", "pattern": "flask", "i": true },
+      { "type": "html", "pattern": "flask_csrf_token", "i": true }
+  ],
+  "Symfony": [
+      { "type": "header", "pattern": "X-Powered-By: Symfony", "i": true },
+      { "type": "cookie", "pattern": "symfony", "i": true },
+      { "type": "html", "pattern": "symfony\\.js", "i": true },
+      { "type": "html", "pattern": "data-symfony", "i": true }
+  ],
+  "ASP.NET": [
+      { "type": "header", "pattern": "X-Powered-By: ASP\\.NET", "i": true },
+      { "type": "header", "pattern": "X-AspNet-Version", "i": true },
+      { "type": "html", "pattern": "__VIEWSTATE", "i": true },
+      { "type": "html", "pattern": "__EVENTVALIDATION", "i": true },
+      { "type": "header", "pattern": "X-AspNetMvc-Version", "i": true }
+  ],
+  "Java/Spring": [
+      { "type": "header", "pattern": "X-Application-Context", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Spring", "i": true },
+      { "type": "cookie", "pattern": "JSESSIONID", "i": true },
+      { "type": "html", "pattern": "_csrf", "i": true },
+      { "type": "header", "pattern": "Set-Cookie: JSESSIONID=", "i": true }
+  ],
+  "Ruby": [
+      { "type": "header", "pattern": "X-Runtime", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Ruby", "i": true },
+      { "type": "header", "pattern": "Server: WEBrick", "i": true },
+      { "type": "header", "pattern": "Server: Thin", "i": true },
+      { "type": "header", "pattern": "Server: Puma", "i": true }
+  ],
+  "Python": [
+      { "type": "header", "pattern": "Server: gunicorn", "i": true },
+      { "type": "header", "pattern": "Server: uvicorn", "i": true },
+      { "type": "header", "pattern": "Server: waitress", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Python", "i": true },
+      { "type": "html", "pattern": "python", "i": true }
+  ],
+  "Go": [
+      { "type": "header", "pattern": "Server: Go-http-server", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Go", "i": true },
+      { "type": "header", "pattern": "X-Go-Version", "i": true },
+      { "type": "header", "pattern": "Server: Caddy", "i": true }
+  ],
+  "Rust": [
+      { "type": "header", "pattern": "Server: Rocket", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Rocket", "i": true },
+      { "type": "header", "pattern": "Server: actix-web", "i": true },
+      { "type": "header", "pattern": "X-Request-Id", "i": true },
+      { "type": "html", "pattern": "rust", "i": true },
+      { "type": "html", "pattern": "\\.rs", "i": true }
+  ],
+  "Elixir/Phoenix": [
+      { "type": "header", "pattern": "Server: Cowboy", "i": true },
+      { "type": "header", "pattern": "X-Phoenix-Request-Id", "i": true },
+      { "type": "html", "pattern": "phoenix", "i": true },
+      { "type": "header", "pattern": "X-Request-Id", "i": true }
+  ],
+  "Deno": [
+      { "type": "header", "pattern": "Server: Deno", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Deno", "i": true },
+      { "type": "header", "pattern": "X-Deno-Version", "i": true }
+  ],
+  "Bun": [
+      { "type": "header", "pattern": "Server: bun", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Bun", "i": true }
+  ],
+  "Gatsby": [
+      { "type": "html", "pattern": "___gatsby", "i": true },
+      { "type": "html", "pattern": "gatsby-link", "i": true },
+      { "type": "html", "pattern": "gatsby-image", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Gatsby", "i": true }
+  ],
+  "GraphQL": [
+      { "type": "header", "pattern": "Content-Type: application/graphql", "i": true },
+      { "type": "html", "pattern": "__APOLLO_GET_PACKAGE__", "i": true },
+      { "type": "html", "pattern": "graphql", "i": true },
+      { "type": "urlpath", "pattern": "/graphql", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: GraphQL", "i": true }
+  ],
+  "Shopify": [
+      { "type": "html", "pattern": "shopify\\.com", "i": true },
+      { "type": "html", "pattern": "cdn\\.shopify\\.com", "i": true },
+      { "type": "html", "pattern": "Shopify\\.theme", "i": true },
+      { "type": "header", "pattern": "X-ShopId", "i": true },
+      { "type": "html", "pattern": "shopify_common", "i": true }
+  ],
+  "WooCommerce": [
+      { "type": "html", "pattern": "woocommerce", "i": true },
+      { "type": "html", "pattern": "wc-", "i": true },
+      { "type": "urlpath", "pattern": "wp-content/plugins/woocommerce", "i": true },
+      { "type": "html", "pattern": "wc-ajax", "i": true },
+      { "type": "html", "pattern": "woocommerce-layout", "i": true },
+      { "type": "urlpath", "pattern": "/cart/", "i": true },
+      { "type": "urlpath", "pattern": "/checkout/", "i": true }
+  ],
+  "MongoDB": [
+      { "type": "header", "pattern": "X-Powered-By: MongoDB", "i": true },
+      { "type": "html", "pattern": "mongodb", "i": true },
+      { "type": "html", "pattern": "ObjectId", "i": true },
+      { "type": "header", "pattern": "X-MongoDB-Version", "i": true },
+      { "type": "html", "pattern": "mongodb(?:\\.min)?\\.js", "i": true },
+      { "type": "html", "pattern": "ObjectId\\([0-9a-f]{24}\\)", "i": true },
+      { "type": "html", "pattern": "Mongo(?:DB|Error|ServerSelectionError)", "i": true },
+      { "type": "html", "pattern": "mongodb(?:\\+srv)?://", "i": true },
+      { "type": "html", "pattern": "MongoDB Server Information", "i": true }
+  ],
+  "MySQL": [
+      { "type": "header", "pattern": "X-Powered-By: MySQL", "i": true },
+      { "type": "html", "pattern": "mysql_", "i": true },
+      { "type": "html", "pattern": "mysqld", "i": true },
+      { "type": "header", "pattern": "X-MySQL-Version", "i": true },
+      { "type": "html", "pattern": "mysql(?:\\.min)?\\.js", "i": true },
+      { "type": "html", "pattern": "mysqld?(?:\\.exe|\\.dll|\\.so|\\.dylib)", "i": true },
+      { "type": "html", "pattern": "MySQL (?:Error|Warning|Notice)", "i": true },
+      { "type": "html", "pattern": "You have an error in your SQL syntax", "i": true },
+      { "type": "html", "pattern": "Access denied for user", "i": true },
+      { "type": "html", "pattern": "mysql://[^\\s\"']+", "i": true }
+  ],
+  "PostgreSQL": [
+      { "type": "header", "pattern": "X-Powered-By: PostgreSQL", "i": true },
+      { "type": "html", "pattern": "postgresql", "i": true },
+      { "type": "html", "pattern": "pg_hba.conf", "i": true },
+      { "type": "header", "pattern": "X-PostgreSQL-Version", "i": true },
+      { "type": "html", "pattern": "postgresql(?:\\.min)?\\.js", "i": true },
+      { "type": "html", "pattern": "postgresql\\.conf", "i": true },
+      { "type": "html", "pattern": "PostgreSQL query failed", "i": true },
+      { "type": "html", "pattern": "postgresql://[^\\s\"']+", "i": true },
+      { "type": "html", "pattern": "PostgreSQL JDBC Driver", "i": true }
+  ],
+  "Redis": [
+      { "type": "header", "pattern": "X-Powered-By: Redis", "i": true },
+      { "type": "header", "pattern": "X-Redis", "i": true },
+      { "type": "html", "pattern": "redis", "i": true },
+      { "type": "header", "pattern": "X-Cache-Status: HIT", "i": true },
+      { "type": "header", "pattern": "X-Redis-Version", "i": true },
+      { "type": "header", "pattern": "X-Cache-Status: (HIT|MISS|EXPIRED|STALE)", "i": true },
+      { "type": "html", "pattern": "redis(?:\\.min)?\\.js", "i": true },
+      { "type": "html", "pattern": "redis(?:-cluster)?\\.(?:conf|service|socket)", "i": true },
+      { "type": "html", "pattern": "ERR (WRONGPASS|NOAUTH|AUTH)", "i": true },
+      { "type": "html", "pattern": "-ERR.*(?:unknown command|syntax error|wrong number of arguments)", "i": true }
+  ],
+  "Docker": [
+      { "type": "header", "pattern": "Server: Docker", "i": true },
+      { "type": "header", "pattern": "X-Docker-Registry", "i": true },
+      { "type": "header", "pattern": "X-Docker-Container", "i": true },
+      { "type": "header", "pattern": "Server: (Docker|docker)", "i": true },
+      { "type": "header", "pattern": "Docker-Distribution-Api-Version", "i": true },
+      { "type": "header", "pattern": "X-Docker-Size", "i": true },
+      { "type": "header", "pattern": "X-Docker-Token", "i": true },
+      { "type": "html", "pattern": "docker(?:-ce|-ee)?\\.(?:exe|dmg|pkg|msi)", "i": true },
+      { "type": "html", "pattern": "docker(?:\\.min)?\\.js", "i": true }
+  ],
+  "Kubernetes": [
+      { "type": "header", "pattern": "Server: kube-proxy", "i": true },
+      { "type": "header", "pattern": "X-Kubernetes-Pod-Name", "i": true },
+      { "type": "header", "pattern": "X-Kubernetes-Container-Name", "i": true },
+      { "type": "header", "pattern": "X-Kubernetes", "i": true },
+      { "type": "header", "pattern": "X-K8s-", "i": true },
+      { "type": "header", "pattern": "Server: nginx/1\\.\\d+\\.\\d+ \\(Kubernetes\\)", "i": true },
+      { "type": "header", "pattern": "X-Kubernetes-", "i": true },
+      { "type": "header", "pattern": "X-Kube-", "i": true },
+      { "type": "html", "pattern": "kubernetes\\.io", "i": true },
+      { "type": "header", "pattern": "Server: (kube-proxy|kubelet|kube-apiserver)", "i": true },
+      { "type": "header", "pattern": "X-Kubernetes-Node", "i": true },
+      { "type": "header", "pattern": "X-Kubernetes-Namespace", "i": true },
+      { "type": "html", "pattern": "kubernetes\\.io", "i": true },
+      { "type": "html", "pattern": "k8s\\.io", "i": true },
+      { "type": "urlpath", "pattern": "/api/v1/namespaces/", "i": true }
+  ],
+  "AWS": [
+      { "type": "header", "pattern": "X-Amz-", "i": true },
+      { "type": "header", "pattern": "Server: AmazonS3", "i": true },
+      { "type": "html", "pattern": "aws-sdk", "i": true },
+      { "type": "html", "pattern": "amazonaws\\.com", "i": true },
+      { "type": "header", "pattern": "Server: (AmazonS3|CloudFront|ELB-)", "i": true },
+      { "type": "header", "pattern": "X-Amz-Request-Id", "i": true },
+      { "type": "header", "pattern": "X-Amz-Cf-", "i": true },
+      { "type": "header", "pattern": "X-Cache: (Hit|Miss) from cloudfront", "i": true },
+      { "type": "html", "pattern": "cloudfront\\.net", "i": true },
+      { "type": "html", "pattern": "aws\\.amazon\\.com", "i": true }
+  ],
+  "Google Cloud": [
+      { "type": "header", "pattern": "Server: Google Frontend", "i": true },
+      { "type": "header", "pattern": "Server: (Google Frontend|Google)", "i": true },
+      { "type": "header", "pattern": "X-Cloud-Trace-Context", "i": true },
+      { "type": "header", "pattern": "X-Cloud-Trace", "i": true },
+      { "type": "header", "pattern": "Server-Timing: gfet4t7; dur=", "i": true },
+      { "type": "html", "pattern": "googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "appspot\\.com", "i": true },
+      { "type": "html", "pattern": "googlecloud\\.com", "i": true },
+      { "type": "html", "pattern": "cloud\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "cloudfunctions\\.net", "i": true },
+      { "type": "html", "pattern": "storage\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "firebaseio\\.com", "i": true }
+  ],
+  "Google Ads": [
+      { "type": "html", "pattern": "googleadservices\\.com", "i": true },
+      { "type": "html", "pattern": "googleads\\.g\\.doubleclick\\.net", "i": true },
+      { "type": "html", "pattern": "pagead2\\.googlesyndication\\.com", "i": true },
+      { "type": "html", "pattern": "adsbygoogle\\.js", "i": true }
+  ],
+  "Google Fonts": [
+      { "type": "html", "pattern": "fonts\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "fonts\\.gstatic\\.com", "i": true },
+      { "type": "html", "pattern": "class=[\"'][^\"']*google-font[^\"']*[\"']", "i": true }
+  ],
+  "Google reCAPTCHA": [
+      { "type": "html", "pattern": "google\\.com/recaptcha/", "i": true },
+      { "type": "html", "pattern": "recaptcha\\.js", "i": true },
+      { "type": "html", "pattern": "grecaptcha\\.", "i": true }
+  ],
+  "Google Maps": [
+      { "type": "html", "pattern": "maps\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "maps\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "class=[\"'][^\"']*google-maps[^\"']*[\"']", "i": true }
+  ],
+  "Google Firebase": [
+      { "type": "html", "pattern": "firebase\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "firebase\\.js", "i": true },
+      { "type": "html", "pattern": "firebase\\.initializeApp", "i": true },
+      { "type": "html", "pattern": "firebaseio\\.com", "i": true },
+      { "type": "html", "pattern": "firebaseapp\\.com", "i": true },
+      { "type": "html", "pattern": "firebase\\.database\\(\\)", "i": true },
+      { "type": "html", "pattern": "firebase\\.firestore\\(\\)", "i": true }
+  ],
+  "Google Optimize": [
+      { "type": "html", "pattern": "googleoptimize\\.com", "i": true },
+      { "type": "html", "pattern": "data-gtm-", "i": true },
+      { "type": "html", "pattern": "optimize\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "www\\.google-analytics\\.com/optimize/", "i": true }
+  ],
+  "Google Pay": [
+      { "type": "html", "pattern": "pay\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "google\\.payments\\.", "i": true },
+      { "type": "html", "pattern": "payments\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "google-pay-button", "i": true }
+  ],
+  "Google Sign-In": [
+      { "type": "html", "pattern": "accounts\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "signin\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "class=[\"'][^\"']*google-signin[^\"']*[\"']", "i": true },
+      { "type": "html", "pattern": "gapi\\.auth2\\.init", "i": true }
+  ],
+  "Google Workspace": [
+      { "type": "html", "pattern": "google\\.com/mail/", "i": true },
+      { "type": "html", "pattern": "docs\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "sheets\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "drive\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "calendar\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "meet\\.google\\.com", "i": true }
+  ],
+  "Google Kubernetes Engine (GKE)": [
+      { "type": "header", "pattern": "X-Kubernetes-", "i": true },
+      { "type": "header", "pattern": "X-GKE-", "i": true },
+      { "type": "html", "pattern": "container\\.googleapis\\.com", "i": true },
+      { "type": "header", "pattern": "X-Google-", "i": true }
+  ],
+  "Google BigQuery": [
+      { "type": "html", "pattern": "bigquery\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "bigquery\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "google\\.cloud\\.bigquery", "i": true }
+  ],
+  "Google Cloud Storage": [
+      { "type": "html", "pattern": "storage\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "storage\\.cloud\\.google\\.com", "i": true },
+      { "type": "html", "pattern": "storage\\.google\\.com", "i": true }
+  ],
+  "Google Cloud Run": [
+      { "type": "html", "pattern": "run\\.app", "i": true },
+      { "type": "html", "pattern": "cloudrun\\.googleapis\\.com", "i": true },
+      { "type": "header", "pattern": "Server: Google Frontend", "i": true },
+      { "type": "header", "pattern": "X-Cloud-Trace-Context", "i": true }
+  ],
+  "Google Cloud SQL": [
+      { "type": "html", "pattern": "cloudsql\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "cloudsql\\.instances\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "googleapis\\.com/sql/", "i": true }
+  ],
+  "Google Cloud Vision": [
+      { "type": "html", "pattern": "vision\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "google\\.cloud\\.vision", "i": true },
+      { "type": "html", "pattern": "gcv\\.googleapis\\.com", "i": true }
+  ],
+  "Google Cloud Natural Language": [
+      { "type": "html", "pattern": "language\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "google\\.cloud\\.language", "i": true }
+  ],
+  "Google Cloud Translation": [
+      { "type": "html", "pattern": "translation\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "google\\.cloud\\.translate", "i": true }
+  ],
+  "Google Cloud Speech-to-Text": [
+      { "type": "html", "pattern": "speech\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "google\\.cloud\\.speech", "i": true }
+  ],
+  "Google Cloud Text-to-Speech": [
+      { "type": "html", "pattern": "texttospeech\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "google\\.cloud\\.texttospeech", "i": true }
+  ],
+  "Google Cloud Video Intelligence": [
+      { "type": "html", "pattern": "videointelligence\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "google\\.cloud\\.videointelligence", "i": true }
+  ],
+  "Google Cloud AutoML": [
+      { "type": "html", "pattern": "automl\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "google\\.cloud\\.automl", "i": true }
+  ],
+  "Google Cloud AI Platform": [
+      { "type": "html", "pattern": "aiplatform\\.googleapis\\.com", "i": true },
+      { "type": "html", "pattern": "google\\.cloud\\.aiplatform", "i": true }
+  ],
+  "Azure": [
+      { "type": "header", "pattern": "X-Powered-By: Azure", "i": true },
+      { "type": "header", "pattern": "X-AspNetMvc-Version", "i": true },
+      { "type": "html", "pattern": "windows\\.net", "i": true },
+      { "type": "header", "pattern": "Server: (Microsoft-IIS|Azure)", "i": true },
+      { "type": "header", "pattern": "X-Azure-Ref", "i": true },
+      { "type": "header", "pattern": "X-Azure-RequestChain", "i": true },
+      { "type": "html", "pattern": "azurewebsites\\.net", "i": true },
+      { "type": "html", "pattern": "azure\\.com", "i": true }
+  ],
+  "Firebase": [
+      { "type": "html", "pattern": "__/__/firebase/", "i": true },
+      { "type": "html", "pattern": "firebaseio\\.com", "i": true },
+      { "type": "html", "pattern": "firebase\\.js", "i": true },
+      { "type": "html", "pattern": "firebase", "i": true },
+      { "type": "html", "pattern": "firebase-app.js", "i": true }
+  ],
+  "Stripe": [
+      { "type": "html", "pattern": "stripe\\.com/v3", "i": true },
+      { "type": "html", "pattern": "stripe-js/", "i": true },
+      { "type": "html", "pattern": "stripe-button", "i": true },
+      { "type": "html", "pattern": "stripe-js", "i": true },
+      { "type": "html", "pattern": "stripe_public_key", "i": true },
+      { "type": "html", "pattern": "stripe\\.min\\.js", "i": true }
+  ],
+  "PayPal": [
+      { "type": "html", "pattern": "paypal\\.com/", "i": true },
+      { "type": "html", "pattern": "paypalobjects\\.com", "i": true },
+      { "type": "html", "pattern": "paypal\\.com/sdk/js", "i": true },
+      { "type": "html", "pattern": "data-paypal-button", "i": true },
+      { "type": "html", "pattern": "paypal\\.com", "i": true }
+  ],
+  "Algolia": [
+      { "type": "html", "pattern": "algolia\\.net/", "i": true },
+      { "type": "html", "pattern": "algoliasearch", "i": true },
+      { "type": "html", "pattern": "instantsearch\\.js", "i": true },
+      { "type": "html", "pattern": "algolia", "i": true },
+      { "type": "html", "pattern": "algolia.net", "i": true }
+  ],
+  "Sentry": [
+      { "type": "html", "pattern": "sentry\\.io/", "i": true },
+      { "type": "html", "pattern": "sentry-browser", "i": true },
+      { "type": "header", "pattern": "X-Sentry-", "i": true },
+      { "type": "html", "pattern": "sentry.io", "i": true },
+      { "type": "header", "pattern": "X-Sentry-Error", "i": true }
+  ],
+  "Segment": [
+      { "type": "html", "pattern": "cdn\\.segment\\.com/", "i": true },
+      { "type": "html", "pattern": "analytics\\.t\\.segment\\.com", "i": true },
+      { "type": "html", "pattern": "cdn.segment.com", "i": true },
+      { "type": "html", "pattern": "analytics.track", "i": true },
+      { "type": "html", "pattern": "analytics.identify", "i": true }
+  ],
+  "HubSpot": [
+      { "type": "html", "pattern": "js\\.hs-scripts\\.com", "i": true },
+      { "type": "html", "pattern": "hubspot\\.com", "i": true },
+      { "type": "html", "pattern": "hstc=", "i": true },
+      { "type": "html", "pattern": "hs-scripts.com", "i": true },
+      { "type": "html", "pattern": "hbspt.forms.create", "i": true }
+  ],
+  "Zapier": [
+      { "type": "html", "pattern": "zapier\\.com/", "i": true },
+      { "type": "html", "pattern": "zapier-js", "i": true }
+  ],
+  "Webpack": [
+      { "type": "html", "pattern": "webpackJsonp", "i": true },
+      { "type": "html", "pattern": "[a-f0-9]{20}\\.js", "i": true },
+      { "type": "html", "pattern": "webpackChunk", "i": true }
+  ],
+  "Babel": [
+      { "type": "html", "pattern": "babel-core", "i": true },
+      { "type": "html", "pattern": "babel/polyfill", "i": true },
+      { "type": "html", "pattern": "@babel/", "i": true }
+  ],
+  "Sass": [
+      { "type": "html", "pattern": "\\.s[ac]ss", "i": true },
+      { "type": "html", "pattern": "sass\\.js", "i": true }
+  ],
+  "Less": [
+      { "type": "html", "pattern": "\\.less", "i": true },
+      { "type": "html", "pattern": "less\\.js", "i": true }
+  ],
+  "Bootstrap Icons": [
+      { "type": "html", "pattern": "bootstrap-icons", "i": true },
+      { "type": "html", "pattern": "bi-", "i": true }
+  ],
+  "Font Awesome": [
+      { "type": "html", "pattern": "font-awesome", "i": true },
+      { "type": "html", "pattern": "fa-", "i": true },
+      { "type": "html", "pattern": "fontawesome", "i": true }
+  ],
+  "Material-UI": [
+      { "type": "html", "pattern": "@material-ui/", "i": true },
+      { "type": "html", "pattern": "Mui-", "i": true },
+      { "type": "html", "pattern": "makeStyles", "i": true }
+  ],
+  "Ant Design": [
+      { "type": "html", "pattern": "antd/", "i": true },
+      { "type": "html", "pattern": "ant-", "i": true },
+      { "type": "html", "pattern": "antd\\.min\\.css", "i": true }
+  ],
+  "Tailwind CSS": [
+      { "type": "html", "pattern": "tailwindcss\\.com", "i": true },
+      { "type": "html", "pattern": "tailwind\\.css", "i": true },
+      { "type": "html", "pattern": "class=[\\\"']?[\\w\\s-]*\\b(bg|text|p|m|w|h)-\\d+[\\w\\s-]*[\\\"']?", "i": true },
+      { "type": "html", "pattern": "@tailwind", "i": true },
+      { "type": "html", "pattern": "@apply", "i": true }
+  ],
+  "Apollo": [
+      { "type": "html", "pattern": "apollo-client", "i": true },
+      { "type": "html", "pattern": "apollo-boost", "i": true },
+      { "type": "html", "pattern": "@apollo/client", "i": true }
+  ],
+  "Prisma": [
+      { "type": "html", "pattern": "prisma-client", "i": true },
+      { "type": "html", "pattern": "prisma.io", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Prisma", "i": true }
+  ],
+  "SQLite": [
+      { "type": "header", "pattern": "X-Powered-By: SQLite", "i": true },
+      { "type": "header", "pattern": "X-SQLite-Version", "i": true },
+      { "type": "html", "pattern": "sqlite(?:3)?\\.(?:dll|so|dylib|exe)", "i": true },
+      { "type": "html", "pattern": "SQLite(?:/\\d+\\.\\d+\\.\\d+)?", "i": true },
+      { "type": "html", "pattern": "SQLite error (?:\\d+): ", "i": true },
+      { "type": "html", "pattern": "no such table:", "i": true },
+      { "type": "html", "pattern": "database is locked", "i": true },
+      { "type": "html", "pattern": "\\.(?:db|sqlite|sqlite3|db3|s3db|sl3)(?:\\.(?:zip|gz))?$", "i": true }
+  ],
+  "Heroku": [
+      { "type": "header", "pattern": "Server: (Cowboy|gunicorn|uvicorn)", "i": true },
+      { "type": "header", "pattern": "X-Heroku-Request-Id", "i": true },
+      { "type": "header", "pattern": "X-Heroku-Dynos-In-Use", "i": true },
+      { "type": "html", "pattern": "herokuapp\\.com", "i": true },
+      { "type": "html", "pattern": "herokucdn\\.com", "i": true },
+      { "type": "html", "pattern": "heroku\\.com", "i": true }
+  ],
+  "Vercel": [
+      { "type": "header", "pattern": "Server: (Vercel|now)", "i": true },
+      { "type": "header", "pattern": "X-Vercel-Id", "i": true },
+      { "type": "header", "pattern": "X-Vercel-Cache", "i": true },
+      { "type": "header", "pattern": "X-Vercel-IP-Country", "i": true },
+      { "type": "html", "pattern": "_next/static", "i": true },
+      { "type": "html", "pattern": "vercel\\.app", "i": true },
+      { "type": "html", "pattern": "vercel\\.com", "i": true }
+  ],
+  "Netlify": [
+      { "type": "header", "pattern": "Server: Netlify", "i": true },
+      { "type": "header", "pattern": "X-NF-Request-ID", "i": true },
+      { "type": "header", "pattern": "X-Netlify-Edge", "i": true },
+      { "type": "header", "pattern": "X-Content-Digest", "i": true },
+      { "type": "html", "pattern": "_next/static", "i": true },
+      { "type": "html", "pattern": "netlify\\.app", "i": true },
+      { "type": "html", "pattern": "netlify\\.com", "i": true }
+  ],
+  "Cloudflare Workers": [
+      { "type": "header", "pattern": "Server: cloudflare-workers", "i": true },
+      { "type": "header", "pattern": "CF-Worker", "i": true },
+      { "type": "header", "pattern": "CF-RAY", "i": true },
+      { "type": "header", "pattern": "CF-Connecting-IP", "i": true },
+      { "type": "header", "pattern": "CF-IPCountry", "i": true },
+      { "type": "header", "pattern": "X-Worker-Name", "i": true },
+      { "type": "header", "pattern": "X-Worker-Start", "i": true }
+  ],
+  "Fastly": [
+      { "type": "header", "pattern": "Server: Fastly", "i": true },
+      { "type": "header", "pattern": "X-Served-By", "i": true },
+      { "type": "header", "pattern": "X-Cache-Hits", "i": true }
+  ],
+  "Akamai": [
+      { "type": "header", "pattern": "Server: AkamaiGHost", "i": true },
+      { "type": "header", "pattern": "X-Akamai-Transformed", "i": true },
+      { "type": "header", "pattern": "X-Akamai-Request-ID", "i": true }
+  ],
+  "Amplitude": [
+      { "type": "html", "pattern": "amplitude.com", "i": true },
+      { "type": "html", "pattern": "amplitude-js", "i": true },
+      { "type": "html", "pattern": "amplitude.getInstance", "i": true }
+  ],
+  "Mixpanel": [
+      { "type": "html", "pattern": "mixpanel.com", "i": true },
+      { "type": "html", "pattern": "mixpanel.track", "i": true },
+      { "type": "html", "pattern": "mixpanel.identify", "i": true }
+  ],
+  "Hotjar": [
+      { "type": "html", "pattern": "hotjar.com", "i": true },
+      { "type": "html", "pattern": "hjid", "i": true },
+      { "type": "html", "pattern": "hjsv", "i": true }
+  ],
+  "Intercom": [
+      { "type": "html", "pattern": "intercomcdn.com", "i": true },
+      { "type": "html", "pattern": "intercomSettings", "i": true },
+      { "type": "html", "pattern": "Intercom\\(['\"]boot['\"]\\)", "i": true }
+  ],
+  "Zendesk": [
+      { "type": "html", "pattern": "zdassets.com", "i": true },
+      { "type": "html", "pattern": "zopim.com", "i": true },
+      { "type": "html", "pattern": "zendesk.com/embeddable", "i": true }
+  ],
+  "Mailchimp": [
+      { "type": "html", "pattern": "s3.amazonaws.com/downloads.mailchimp.com", "i": true },
+      { "type": "html", "pattern": "mailchimp.com", "i": true },
+      { "type": "html", "pattern": "mailchimp-popup-", "i": true }
+  ],
+  "SendGrid": [
+      { "type": "html", "pattern": "sendgrid.com", "i": true },
+      { "type": "html", "pattern": "sendgrid.net", "i": true },
+      { "type": "header", "pattern": "X-SG-EID", "i": true }
+  ],
+  "Twilio": [
+      { "type": "html", "pattern": "twilio.com", "i": true },
+      { "type": "html", "pattern": "twiliocdn.com", "i": true },
+      { "type": "html", "pattern": "twilio.js", "i": true }
+  ],
+  "Auth0": [
+      { "type": "html", "pattern": "auth0.com", "i": true },
+      { "type": "html", "pattern": "auth0.js", "i": true },
+      { "type": "html", "pattern": "auth0-spa-js", "i": true }
+  ],
+  "Okta": [
+      { "type": "html", "pattern": "okta.com", "i": true },
+      { "type": "html", "pattern": "oktacdn.com", "i": true },
+      { "type": "html", "pattern": "okta-signin", "i": true }
+  ],
+  "Contentful": [
+      { "type": "html", "pattern": "contentful.com", "i": true },
+      { "type": "html", "pattern": "contentful.js", "i": true },
+      { "type": "html", "pattern": "contentful.com/spaces/", "i": true }
+  ],
+  "Sanity": [
+      { "type": "html", "pattern": "sanity.io", "i": true },
+      { "type": "html", "pattern": "@sanity/client", "i": true },
+      { "type": "html", "pattern": "sanity.json", "i": true }
+  ],
+  "Strapi": [
+      { "type": "html", "pattern": "strapi.io", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Strapi", "i": true },
+      { "type": "urlpath", "pattern": "/admin/", "i": true }
+  ],
+  "Ghost": [
+      { "type": "html", "pattern": "ghost.org", "i": true },
+      { "type": "html", "pattern": "ghost", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: Ghost", "i": true }
+  ],
+  "BigCommerce": [
+      { "type": "html", "pattern": "bigcommerce\\.com", "i": true },
+      { "type": "html", "pattern": "cdn4\\.bigcommerce\\.com", "i": true },
+      { "type": "html", "pattern": "stencil", "i": true },
+      { "type": "html", "pattern": "bc\\.js", "i": true },
+      { "type": "header", "pattern": "X-BC-Store-Version", "i": true }
+  ],
+  "SvelteKit": [
+      { "type": "html", "pattern": "data-sveltekit", "i": true },
+      { "type": "html", "pattern": "/_app/immutable/start", "i": true },
+      { "type": "header", "pattern": "X-Powered-By: SvelteKit", "i": true }
+  ],
+  "Hono": [
+      { "type": "header", "pattern": "X-Powered-By: Hono", "i": true },
+      { "type": "header", "pattern": "X-Hono-Version", "i": true }
+  ],
+  "SolidJS": [
+      { "type": "html", "pattern": "data-hk", "i": true },
+      { "type": "html", "pattern": "solid-js", "i": true }
+  ],
+  "Astro": [
+      { "type": "html", "pattern": "astro-island", "i": true },
+      { "type": "html", "pattern": "/_astro/", "i": true },
+      { "type": "header", "pattern": "X-Astro-Version", "i": true }
+  ],
+  "Vite": [
+      { "type": "html", "pattern": "/@vite/client", "i": true },
+      { "type": "html", "pattern": "data-vite-dev-id", "i": true }
+  ],
+  "GitHub Pages": [
+      { "type": "header", "pattern": "Server: GitHub.com", "i": true },
+      { "type": "header", "pattern": "X-GitHub-Request-Id", "i": true },
+      { "type": "html", "pattern": "\\.github\\.io", "i": true }
+  ],
+  "DigitalOcean": [
+      { "type": "header", "pattern": "Server: DigitalOcean", "i": true },
+      { "type": "header", "pattern": "X-DO-Request-Id", "i": true }
+  ],
+  "Datadog": [
+      { "type": "html", "pattern": "datadog-rum\\.js", "i": true },
+      { "type": "html", "pattern": "DD_RUM", "i": true }
+  ],
+  "New Relic": [
+      { "type": "html", "pattern": "newrelic\\.js", "i": true },
+      { "type": "html", "pattern": "NREUM", "i": true },
+      { "type": "header", "pattern": "X-CDN-Provider: New Relic", "i": true }
+  ],
+  "Plausible Analytics": [
+      { "type": "html", "pattern": "plausible\\.io/js/", "i": true }
+  ],
+  "Matomo": [
+      { "type": "html", "pattern": "matomo\\.js", "i": true },
+      { "type": "html", "pattern": "_paq\\.push", "i": true }
+  ],
+  "Vimeo": [
+      { "type": "html", "pattern": "player\\.vimeo\\.com", "i": true },
+      { "type": "html", "pattern": "vimeo-player", "i": true }
+  ],
+  "Cloudinary": [
+      { "type": "html", "pattern": "res\\.cloudinary\\.com", "i": true },
+      { "type": "html", "pattern": "cloudinary\\.js", "i": true }
+  ],
+  "FastAPI": [
+      { "type": "header", "pattern": "X-Powered-By: FastAPI", "i": true },
+      { "type": "header", "pattern": "Server: uvicorn", "i": true }
+  ],
+  "Alibaba Cloud": [
+      { "type": "header", "pattern": "Server: AliyunOSS", "i": true },
+      { "type": "html", "pattern": "aliyuncs\\.com", "i": true },
+      { "type": "html", "pattern": "aliyun\\.com", "i": true },
+      { "type": "header", "pattern": "X-OSS-", "i": true }
+  ],
+  "Oracle Cloud": [
+      { "type": "header", "pattern": "Server: Oracle-Application-Server", "i": true },
+      { "type": "html", "pattern": "oraclecloud\\.com", "i": true },
+      { "type": "html", "pattern": "oracle\\.com/cloud", "i": true },
+      { "type": "header", "pattern": "X-Oracle-", "i": true }
+  ],
+  "IBM Cloud": [
+      { "type": "header", "pattern": "Server: IBM_HTTP_Server", "i": true },
+      { "type": "html", "pattern": "bluemix\\.net", "i": true },
+      { "type": "html", "pattern": "ibmcloud\\.com", "i": true },
+      { "type": "header", "pattern": "X-Backside-Transport", "i": true }
+  ],
+
+  "Linode": [
+      { "type": "header", "pattern": "Server: nginx \\(Linode\\)", "i": true },
+      { "type": "html", "pattern": "linode\\.com", "i": true },
+      { "type": "header", "pattern": "X-Linode-", "i": true }
+  ],
+  "Vultr": [
+      { "type": "header", "pattern": "Server: Vultr", "i": true },
+      { "type": "html", "pattern": "vultr\\.com", "i": true },
+      { "type": "header", "pattern": "X-Vultr-", "i": true }
+  ],
+  "Spring Boot": [
+      { "type": "header", "pattern": "X-Application-Context", "i": true },
+      { "type": "html", "pattern": "spring-boot", "i": true },
+      { "type": "html", "pattern": "springframework", "i": true },
+      { "type": "html", "pattern": "springboot", "i": true }
+  ],
+  "Micronaut": [
+      { "type": "html", "pattern": "micronaut", "i": true },
+      { "type": "html", "pattern": "@micronaut/", "i": true }
+  ],
+  "Quarkus": [
+      { "type": "html", "pattern": "quarkus", "i": true },
+      { "type": "html", "pattern": "io.quarkus", "i": true }
+  ],
+  "Vert.x": [
+      { "type": "html", "pattern": "vertx", "i": true },
+      { "type": "html", "pattern": "vert.x", "i": true },
+      { "type": "html", "pattern": "io.vertx", "i": true }
+  ],
+  "Play Framework": [
+      { "type": "html", "pattern": "play framework", "i": true },
+      { "type": "html", "pattern": "playframework", "i": true },
+      { "type": "html", "pattern": "play\\.java", "i": true }
+  ],
+  "Akka": [
+      { "type": "html", "pattern": "akka", "i": true },
+      { "type": "html", "pattern": "akka\\.io", "i": true }
+  ],
+  "CakePHP": [
+      { "type": "html", "pattern": "cakephp", "i": true },
+      { "type": "html", "pattern": "cake\\.php", "i": true }
+  ],
+  "CodeIgniter": [
+      { "type": "html", "pattern": "codeigniter", "i": true },
+      { "type": "html", "pattern": "codeigniter\\.com", "i": true }
+  ],
+  "Yii": [
+      { "type": "html", "pattern": "yii", "i": true },
+      { "type": "html", "pattern": "yiiframework", "i": true }
+  ],
+  "Phalcon": [
+      { "type": "html", "pattern": "phalcon", "i": true },
+      { "type": "html", "pattern": "phalcon\\.php", "i": true }
+  ],
+  "Slim": [
+      { "type": "html", "pattern": "slim framework", "i": true },
+      { "type": "html", "pattern": "slimframework", "i": true }
+  ],
+  "Laminas": [
+      { "type": "html", "pattern": "laminas", "i": true },
+      { "type": "html", "pattern": "zend framework", "i": true },
+      { "type": "html", "pattern": "zendframework", "i": true }
+  ],
+  "FuelPHP": [
+      { "type": "html", "pattern": "fuelphp", "i": true },
+      { "type": "html", "pattern": "fuelphp\\.com", "i": true }
+  ],
+  "Meteor": [
+      { "type": "html", "pattern": "meteor", "i": true },
+      { "type": "html", "pattern": "meteor\\.com", "i": true },
+      { "type": "html", "pattern": "webapp\\.js", "i": true }
+  ],
+  "Sails.js": [
+      { "type": "html", "pattern": "sails", "i": true },
+      { "type": "html", "pattern": "sailsjs", "i": true }
+  ],
+  "FeathersJS": [
+      { "type": "html", "pattern": "feathers", "i": true },
+      { "type": "html", "pattern": "@feathersjs/", "i": true }
+  ],
+  "LoopBack": [
+      { "type": "html", "pattern": "loopback", "i": true },
+      { "type": "html", "pattern": "@loopback/", "i": true }
+  ],
+  "Kraken.js": [
+      { "type": "html", "pattern": "kraken", "i": true },
+      { "type": "html", "pattern": "krakenjs", "i": true }
+  ],
+  "Derby": [
+      { "type": "html", "pattern": "derby", "i": true },
+      { "type": "html", "pattern": "derbyjs", "i": true }
+  ],
+  "Blazor": [
+      { "type": "html", "pattern": "blazor", "i": true },
+      { "type": "html", "pattern": "blazor\\.webassembly\\.js", "i": true }
+  ],
+  ".NET Core": [
+      { "type": "header", "pattern": "X-Powered-By: ASP\\.NET", "i": true },
+      { "type": "html", "pattern": "\\.net core", "i": true },
+      { "type": "html", "pattern": "dotnet", "i": true }
+  ],
+  "Apollo GraphQL": [
+      { "type": "html", "pattern": "apollo", "i": true },
+      { "type": "html", "pattern": "@apollo/", "i": true },
+      { "type": "html", "pattern": "apollo-client", "i": true }
+  ],
+  "Hasura": [
+      { "type": "html", "pattern": "hasura", "i": true },
+      { "type": "html", "pattern": "hasura\\.io", "i": true }
+  ],
+  "AWS Lambda": [
+      { "type": "header", "pattern": "x-amz-function-error", "i": true },
+      { "type": "header", "pattern": "x-amz-log-result", "i": true },
+      { "type": "header", "pattern": "x-amzn-Remapped-", "i": true },
+      { "type": "html", "pattern": "lambda\\.amazonaws\\.com", "i": true }
+  ],
+  "Microsoft Azure Functions": [
+      { "type": "header", "pattern": "X-Powered-By: Azure Functions", "i": true },
+      { "type": "header", "pattern": "X-Site-Deployment-Id", "i": true },
+      { "type": "html", "pattern": "azurewebsites\\.net/api/", "i": true },
+      { "type": "header", "pattern": "X-Azure-FDID", "i": true }
+  ],
+  "Google Cloud Functions": [
+      { "type": "html", "pattern": "cloudfunctions\\.net", "i": true },
+      { "type": "html", "pattern": "cloudfunctions\\.googleapis\\.com", "i": true },
+      { "type": "header", "pattern": "X-Google-Cloud-Functions", "i": true }
+  ],
+  "OpenShift": [
+      { "type": "header", "pattern": "X-Powered-By: OpenShift", "i": true },
+      { "type": "header", "pattern": "X-Request-Id", "i": true },
+      { "type": "html", "pattern": "openshift\\.com", "i": true },
+      { "type": "header", "pattern": "X-OpenShift-", "i": true }
+  ],
+  "MariaDB": [
+      { "type": "header", "pattern": "X-Powered-By: MariaDB", "i": true },
+      { "type": "html", "pattern": "mariadb", "i": true },
+      { "type": "header", "pattern": "X-MariaDB-Version", "i": true }
+  ],
+  "Elasticsearch": [
+      { "type": "html", "pattern": "elasticsearch", "i": true },
+      { "type": "html", "pattern": "_search", "i": true },
+      { "type": "header", "pattern": "X-Elasticsearch-Version", "i": true }
+  ],
+  "Redis Cache": [
+      { "type": "header", "pattern": "X-Cache: Redis", "i": true },
+      { "type": "html", "pattern": "redis-cache", "i": true }
+  ],
+  "Supabase": [
+      { "type": "html", "pattern": "supabase\\.io", "i": true },
+      { "type": "html", "pattern": "supabase-js", "i": true },
+      { "type": "html", "pattern": "sb-", "i": true }
+  ],
+  "PlanetScale": [
+      { "type": "html", "pattern": "planetscale\\.com", "i": true },
+      { "type": "header", "pattern": "X-PlanetScale-", "i": true }
+  ],
+  "Vercel KV": [
+      { "type": "html", "pattern": "kv\\.vercel-storage\\.com", "i": true },
+      { "type": "header", "pattern": "X-Vercel-KV", "i": true }
+  ],
+  "NestJS": [
+      { "type": "header", "pattern": "X-Powered-By: NestJS", "i": true },
+      { "type": "html", "pattern": "@nestjs/", "i": true },
+      { "type": "html", "pattern": "nestjs", "i": true }
+  ],
+  "AdonisJS": [
+      { "type": "header", "pattern": "X-Powered-By: AdonisJS", "i": true },
+      { "type": "html", "pattern": "@adonisjs/", "i": true },
+      { "type": "html", "pattern": "adonis", "i": true }
+  ],
+  "Fastify": [
+      { "type": "header", "pattern": "Server: fastify", "i": true },
+      { "type": "html", "pattern": "fastify", "i": true }
+  ],
+  "Koa": [
+      { "type": "header", "pattern": "X-Powered-By: Koa", "i": true },
+      { "type": "html", "pattern": "koa", "i": true }
+  ],
+  "Hapi": [
+      { "type": "header", "pattern": "X-Powered-By: hapi", "i": true },
+      { "type": "html", "pattern": "@hapi/", "i": true }
+  ],
+  "Qwik": [
+      { "type": "html", "pattern": "qwik", "i": true },
+      { "type": "html", "pattern": "@builder.io/qwik", "i": true },
+      { "type": "html", "pattern": "q:base", "i": true }
+  ],
+  "Preact": [
+      { "type": "html", "pattern": "preact", "i": true },
+      { "type": "html", "pattern": "htm\\.preact", "i": true }
+  ],
+  "Solid": [
+      { "type": "html", "pattern": "solid-js", "i": true },
+      { "type": "html", "pattern": "solidjs", "i": true }
+  ],
+  "Remix": [
+      { "type": "html", "pattern": "remix", "i": true },
+      { "type": "html", "pattern": "@remix-run/", "i": true },
+      { "type": "html", "pattern": "remix-run", "i": true }
+  ],
+  "Ember.js": [
+      { "type": "html", "pattern": "ember\\.js", "i": true },
+      { "type": "html", "pattern": "ember", "i": true },
+      { "type": "html", "pattern": "data-ember", "i": true }
+  ],
+  "Backbone.js": [
+      { "type": "html", "pattern": "backbone\\.js", "i": true },
+      { "type": "html", "pattern": "backbone", "i": true }
+  ],
+  "Knockout.js": [
+      { "type": "html", "pattern": "knockout\\.js", "i": true },
+      { "type": "html", "pattern": "knockout", "i": true }
+  ],
+  "Alpine.js": [
+      { "type": "html", "pattern": "alpine\\.js", "i": true },
+      { "type": "html", "pattern": "x-data", "i": true },
+      { "type": "html", "pattern": "x-", "i": true }
+  ],
+  "HTMX": [
+      { "type": "html", "pattern": "htmx\\.org", "i": true },
+      { "type": "html", "pattern": "hx-", "i": true },
+      { "type": "html", "pattern": "htmx", "i": true }
+  ],
+  "Turbo": [
+      { "type": "html", "pattern": "@hotwired/turbo", "i": true },
+      { "type": "html", "pattern": "turbo", "i": true },
+      { "type": "html", "pattern": "data-turbo", "i": true }
+  ],
+  "Stimulus": [
+      { "type": "html", "pattern": "@hotwired/stimulus", "i": true },
+      { "type": "html", "pattern": "stimulus", "i": true },
+      { "type": "html", "pattern": "data-controller", "i": true }
+  ],
+  "Redux": [
+      { "type": "html", "pattern": "redux", "i": true },
+      { "type": "html", "pattern": "@reduxjs/", "i": true }
+  ],
+  "MobX": [
+      { "type": "html", "pattern": "mobx", "i": true },
+      { "type": "html", "pattern": "mobx-react", "i": true }
+  ],
+  "Zustand": [
+      { "type": "html", "pattern": "zustand", "i": true },
+      { "type": "html", "pattern": "create\\(set", "i": true }
+  ],
+  "TanStack Query": [
+      { "type": "html", "pattern": "@tanstack/react-query", "i": true },
+      { "type": "html", "pattern": "react-query", "i": true },
+      { "type": "html", "pattern": "useQuery", "i": true }
+  ],
+  "SWR": [
+      { "type": "html", "pattern": "swr", "i": true },
+      { "type": "html", "pattern": "useSWR", "i": true }
+  ],
+  "Zod": [
+      { "type": "html", "pattern": "zod", "i": true },
+      { "type": "html", "pattern": "@zod/", "i": true }
+  ],
+  "Yup": [
+      { "type": "html", "pattern": "yup", "i": true },
+      { "type": "html", "pattern": "yup\\.object", "i": true }
+  ],
+  "Joi": [
+      { "type": "html", "pattern": "joi", "i": true },
+      { "type": "html", "pattern": "@hapi/joi", "i": true }
+  ],
+  "Axios": [
+      { "type": "html", "pattern": "axios", "i": true },
+      { "type": "html", "pattern": "axios\\.min\\.js", "i": true }
+  ],
+  "Fetch API": [
+      { "type": "html", "pattern": "fetch\\(", "i": true }
+  ],
+  "Storybook": [
+      { "type": "html", "pattern": "storybook", "i": true },
+      { "type": "html", "pattern": "@storybook/", "i": true }
+  ],
+  "Cypress": [
+      { "type": "html", "pattern": "cypress\\.io", "i": true },
+      { "type": "html", "pattern": "@cypress/", "i": true }
+  ],
+  "Playwright": [
+      { "type": "html", "pattern": "playwright", "i": true },
+      { "type": "html", "pattern": "@playwright/", "i": true }
+  ],
+  "Jest": [
+      { "type": "html", "pattern": "jest", "i": true },
+      { "type": "html", "pattern": "@jest/", "i": true }
+  ],
+  "Vitest": [
+      { "type": "html", "pattern": "vitest", "i": true },
+      { "type": "html", "pattern": "@vitest/", "i": true }
+  ],
+  "Mocha": [
+      { "type": "html", "pattern": "mocha", "i": true },
+      { "type": "html", "pattern": "@mocha/", "i": true }
+  ],
+  "Chai": [
+      { "type": "html", "pattern": "chai", "i": true },
+      { "type": "html", "pattern": "@chai/", "i": true }
+  ],
+  "Sinon": [
+      { "type": "html", "pattern": "sinon", "i": true },
+      { "type": "html", "pattern": "@sinonjs/", "i": true }
+  ],
+  "ESLint": [
+      { "type": "html", "pattern": "eslint", "i": true },
+      { "type": "html", "pattern": "@eslint/", "i": true }
+  ],
+  "Prettier": [
+      { "type": "html", "pattern": "prettier", "i": true },
+      { "type": "html", "pattern": "@prettier/", "i": true }
+  ],
+  "TypeScript": [
+      { "type": "html", "pattern": "typescript", "i": true },
+      { "type": "html", "pattern": "\\.ts", "i": true },
+      { "type": "html", "pattern": "@types/", "i": true }
+  ],
+  "CoffeeScript": [
+      { "type": "html", "pattern": "coffeescript", "i": true },
+      { "type": "html", "pattern": "\\.coffee", "i": true }
+  ],
+  "Dart": [
+      { "type": "html", "pattern": "dart", "i": true },
+      { "type": "html", "pattern": "\\.dart", "i": true }
+  ],
+  "Kotlin": [
+      { "type": "html", "pattern": "kotlin", "i": true },
+      { "type": "html", "pattern": "\\.kt", "i": true }
+  ],
+  "Swift": [
+      { "type": "html", "pattern": "swift", "i": true },
+      { "type": "html", "pattern": "\\.swift", "i": true }
+  ],
+  "Julia": [
+      { "type": "html", "pattern": "julia", "i": true },
+      { "type": "html", "pattern": "\\.jl", "i": true }
+  ],
+  "Lua": [
+      { "type": "html", "pattern": "lua", "i": true },
+      { "type": "html", "pattern": "\\.lua", "i": true }
+  ],
+  "Perl": [
+      { "type": "html", "pattern": "perl", "i": true },
+      { "type": "html", "pattern": "\\.pl", "i": true }
+  ],
+  "Terraform": [
+      { "type": "html", "pattern": "terraform", "i": true },
+      { "type": "html", "pattern": "hashicorp/terraform", "i": true }
+  ],
+  "Ansible": [
+      { "type": "html", "pattern": "ansible", "i": true },
+      { "type": "html", "pattern": "ansible-", "i": true }
+  ],
+  "Docker Compose": [
+      { "type": "html", "pattern": "docker-compose", "i": true },
+      { "type": "html", "pattern": "compose\\.yaml", "i": true }
+  ],
+  "Kubernetes Helm": [
+      { "type": "html", "pattern": "helm", "i": true },
+      { "type": "html", "pattern": "helm\\.sh", "i": true }
+  ],
+  "Prometheus": [
+      { "type": "html", "pattern": "prometheus", "i": true },
+      { "type": "html", "pattern": "prometheus\\.io", "i": true }
+  ],
+  "Grafana": [
+      { "type": "html", "pattern": "grafana", "i": true },
+      { "type": "html", "pattern": "grafana\\.com", "i": true }
+  ],
+  "ELK Stack": [
+      { "type": "html", "pattern": "elasticsearch", "i": true },
+      { "type": "html", "pattern": "logstash", "i": true },
+      { "type": "html", "pattern": "kibana", "i": true }
+  ],
+  "Postman": [
+      { "type": "html", "pattern": "postman", "i": true },
+      { "type": "html", "pattern": "postman\\.com", "i": true }
+  ],
+  "Swagger": [
+      { "type": "html", "pattern": "swagger", "i": true },
+      { "type": "html", "pattern": "swagger-ui", "i": true },
+      { "type": "html", "pattern": "openapi", "i": true }
+  ],
+  "OpenAPI": [
+      { "type": "html", "pattern": "openapi", "i": true },
+      { "type": "html", "pattern": "openapi\\.json", "i": true }
+  ],
+  "WebSocket": [
+      { "type": "header", "pattern": "Upgrade: websocket", "i": true },
+      { "type": "html", "pattern": "websocket", "i": true },
+      { "type": "html", "pattern": "ws://", "i": true },
+      { "type": "html", "pattern": "wss://", "i": true }
+  ],
+  "Server-Sent Events": [
+      { "type": "header", "pattern": "Content-Type: text/event-stream", "i": true },
+      { "type": "html", "pattern": "eventsource", "i": true }
+  ],
+  "WebRTC": [
+      { "type": "html", "pattern": "webrtc", "i": true },
+      { "type": "html", "pattern": "RTCPeerConnection", "i": true }
+  ],
+  "MediaPipe": [
+      { "type": "html", "pattern": "mediapipe", "i": true },
+      { "type": "html", "pattern": "@mediapipe/", "i": true }
+  ],
+  "TensorFlow.js": [
+      { "type": "html", "pattern": "tensorflow", "i": true },
+      { "type": "html", "pattern": "@tensorflow/", "i": true }
+  ],
+  "Three.js": [
+      { "type": "html", "pattern": "three\\.js", "i": true },
+      { "type": "html", "pattern": "threejs", "i": true }
+  ],
+  "Babylon.js": [
+      { "type": "html", "pattern": "babylonjs", "i": true },
+      { "type": "html", "pattern": "babylon\\.js", "i": true }
+  ],
+  "A-Frame": [
+      { "type": "html", "pattern": "aframe\\.io", "i": true },
+      { "type": "html", "pattern": "<a-scene", "i": true }
+  ],
+  "D3.js": [
+      { "type": "html", "pattern": "d3\\.js", "i": true },
+      { "type": "html", "pattern": "d3\\.min\\.js", "i": true }
+  ],
+  "Chart.js": [
+      { "type": "html", "pattern": "chart\\.js", "i": true },
+      { "type": "html", "pattern": "chart\\.min\\.js", "i": true }
+  ],
+  "Plotly": [
+      { "type": "html", "pattern": "plotly", "i": true },
+      { "type": "html", "pattern": "plotly\\.js", "i": true }
+  ],
+  "Leaflet": [
+      { "type": "html", "pattern": "leaflet", "i": true },
+      { "type": "html", "pattern": "leaflet\\.js", "i": true }
+  ],
+  "Mapbox": [
+      { "type": "html", "pattern": "mapbox", "i": true },
+      { "type": "html", "pattern": "mapbox\\.com", "i": true }
+  ],
+  "OpenStreetMap": [
+      { "type": "html", "pattern": "openstreetmap", "i": true },
+      { "type": "html", "pattern": "osm\\.org", "i": true }
+  ],
+  "Framer Motion": [
+      { "type": "html", "pattern": "framer-motion", "i": true },
+      { "type": "html", "pattern": "@framer/motion", "i": true }
+  ],
+  "GSAP": [
+      { "type": "html", "pattern": "gsap", "i": true },
+      { "type": "html", "pattern": "greensock", "i": true }
+  ],
+  "Anime.js": [
+      { "type": "html", "pattern": "anime\\.js", "i": true },
+      { "type": "html", "pattern": "animejs", "i": true }
+  ],
+  "Lottie": [
+      { "type": "html", "pattern": "lottie", "i": true },
+      { "type": "html", "pattern": "lottie-web", "i": true }
+  ],
+  "Moment.js": [
+      { "type": "html", "pattern": "moment\\.js", "i": true },
+      { "type": "html", "pattern": "moment", "i": true }
+  ],
+  "Day.js": [
+      { "type": "html", "pattern": "dayjs", "i": true },
+      { "type": "html", "pattern": "day\\.js", "i": true }
+  ],
+  "date-fns": [
+      { "type": "html", "pattern": "date-fns", "i": true },
+      { "type": "html", "pattern": "datefns", "i": true }
+  ],
+  "Luxon": [
+      { "type": "html", "pattern": "luxon", "i": true },
+      { "type": "html", "pattern": "moment\\.luxon", "i": true }
+  ],
+  "Lodash": [
+      { "type": "html", "pattern": "lodash", "i": true },
+      { "type": "html", "pattern": "lodash\\.min\\.js", "i": true },
+      { "type": "html", "pattern": "_\\.", "i": true }
+  ],
+  "Underscore.js": [
+      { "type": "html", "pattern": "underscore\\.js", "i": true },
+      { "type": "html", "pattern": "underscore", "i": true }
+  ],
+  "Ramda": [
+      { "type": "html", "pattern": "ramda", "i": true },
+      { "type": "html", "pattern": "ramda\\.js", "i": true }
+  ],
+  "Immutable.js": [
+      { "type": "html", "pattern": "immutable", "i": true },
+      { "type": "html", "pattern": "immutable\\.js", "i": true }
+  ],
+  "Mori": [
+      { "type": "html", "pattern": "mori", "i": true },
+      { "type": "html", "pattern": "mori\\.js", "i": true }
+  ],
+  "CryptoJS": [
+      { "type": "html", "pattern": "crypto-js", "i": true },
+      { "type": "html", "pattern": "cryptojs", "i": true }
+  ],
+  "OpenSSL": [
+      { "type": "header", "pattern": "OpenSSL", "i": true },
+      { "type": "html", "pattern": "openssl", "i": true }
+  ],
+  "JWT": [
+      { "type": "header", "pattern": "Authorization: Bearer", "i": true },
+      { "type": "html", "pattern": "jwt", "i": true },
+      { "type": "html", "pattern": "jsonwebtoken", "i": true }
+  ],
+  "OAuth": [
+      { "type": "html", "pattern": "oauth", "i": true },
+      { "type": "html", "pattern": "oauth2", "i": true }
+  ],
+  "SAML": [
+      { "type": "html", "pattern": "saml", "i": true },
+      { "type": "html", "pattern": "saml2", "i": true }
+  ],
+  "OpenID Connect": [
+      { "type": "html", "pattern": "openid", "i": true },
+      { "type": "html", "pattern": "openid-connect", "i": true }
+  ],
+  "Passport.js": [
+      { "type": "html", "pattern": "passport", "i": true },
+      { "type": "html", "pattern": "passport\\.js", "i": true }
+  ],
+  "NextAuth.js": [
+      { "type": "html", "pattern": "next-auth", "i": true },
+      { "type": "html", "pattern": "nextauth", "i": true }
+  ],
+  "Clerk": [
+      { "type": "html", "pattern": "clerk", "i": true },
+      { "type": "html", "pattern": "@clerk/", "i": true }
+  ],
+  "Lucide": [
+      { "type": "html", "pattern": "lucide", "i": true },
+      { "type": "html", "pattern": "lucide-react", "i": true }
+  ],
+  "Heroicons": [
+      { "type": "html", "pattern": "heroicons", "i": true },
+      { "type": "html", "pattern": "@heroicons/", "i": true }
+  ],
+  "Phosphor Icons": [
+      { "type": "html", "pattern": "phosphor-icons", "i": true },
+      { "type": "html", "pattern": "@phosphor-icons/", "i": true }
+  ],
+  "Tabler Icons": [
+      { "type": "html", "pattern": "tabler-icons", "i": true },
+      { "type": "html", "pattern": "@tabler/icons-", "i": true }
+  ],
+  "Radix UI": [
+      { "type": "html", "pattern": "@radix-ui/", "i": true },
+      { "type": "html", "pattern": "radix-ui", "i": true }
+  ],
+  "Headless UI": [
+      { "type": "html", "pattern": "@headlessui/", "i": true },
+      { "type": "html", "pattern": "headlessui", "i": true }
+  ],
+  "Shadcn/ui": [
+      { "type": "html", "pattern": "shadcn", "i": true },
+      { "type": "html", "pattern": "shadcn-ui", "i": true }
+  ],
+  "Chakra UI": [
+      { "type": "html", "pattern": "@chakra-ui/", "i": true },
+      { "type": "html", "pattern": "chakra-ui", "i": true }
+  ],
+  "Mantine": [
+      { "type": "html", "pattern": "@mantine/", "i": true },
+      { "type": "html", "pattern": "mantine", "i": true }
+  ],
+  "DaisyUI": [
+      { "type": "html", "pattern": "daisyui", "i": true },
+      { "type": "html", "pattern": "daisyui\\.com", "i": true }
+  ],
+  "Bulma": [
+      { "type": "html", "pattern": "bulma\\.css", "i": true },
+      { "type": "html", "pattern": "bulma\\.io", "i": true }
+  ],
+  "Foundation": [
+      { "type": "html", "pattern": "foundation\\.css", "i": true },
+      { "type": "html", "pattern": "foundation\\.sites", "i": true }
+  ],
+  "Pure CSS": [
+      { "type": "html", "pattern": "pure\\.css", "i": true },
+      { "type": "html", "pattern": "purecss\\.io", "i": true }
+  ],
+  "Skeleton": [
+      { "type": "html", "pattern": "skeleton\\.css", "i": true },
+      { "type": "html", "pattern": "getskeleton\\.com", "i": true }
+  ],
+  "Picocss": [
+      { "type": "html", "pattern": "picocss", "i": true },
+      { "type": "html", "pattern": "picocss\\.com", "i": true }
+  ],
+  "Water.css": [
+      { "type": "html", "pattern": "water\\.css", "i": true },
+      { "type": "html", "pattern": "watercss\\.github\\.io", "i": true }
+  ],
+  "Milligram": [
+      { "type": "html", "pattern": "milligram", "i": true },
+      { "type": "html", "pattern": "milligram\\.github\\.io", "i": true }
+  ],
+  "Spectre.css": [
+      { "type": "html", "pattern": "spectre\\.css", "i": true },
+      { "type": "html", "pattern": "spectre\\.github\\.io", "i": true }
+  ],
+  "Paper.css": [
+      { "type": "html", "pattern": "paper\\.css", "i": true },
+      { "type": "html", "pattern": "www\\.papercss\\.com", "i": true }
+  ],
+  "Tachyons": [
+      { "type": "html", "pattern": "tachyons", "i": true },
+      { "type": "html", "pattern": "tachyons\\.css", "i": true }
+  ],
+  "Windi CSS": [
+      { "type": "html", "pattern": "windi", "i": true },
+      { "type": "html", "pattern": "windicss", "i": true }
+  ],
+  "UnoCSS": [
+      { "type": "html", "pattern": "unocss", "i": true },
+      { "type": "html", "pattern": "@unocss/", "i": true }
+  ],
+  "PostCSS": [
+      { "type": "html", "pattern": "postcss", "i": true },
+      { "type": "html", "pattern": "@postcss/", "i": true }
+  ],
+  "Autoprefixer": [
+      { "type": "html", "pattern": "autoprefixer", "i": true },
+      { "type": "html", "pattern": "autoprefixer\\.css", "i": true }
+  ],
+  "CSS Modules": [
+      { "type": "html", "pattern": "\\.module\\.css", "i": true },
+      { "type": "html", "pattern": "css-modules", "i": true }
+  ],
+  "Styled Components": [
+      { "type": "html", "pattern": "styled-components", "i": true },
+      { "type": "html", "pattern": "@emotion/styled", "i": true }
+  ],
+  "Emotion": [
+      { "type": "html", "pattern": "@emotion/", "i": true },
+      { "type": "html", "pattern": "emotion", "i": true }
+  ],
+  "CSS-in-JS": [
+      { "type": "html", "pattern": "css-in-js", "i": true },
+      { "type": "html", "pattern": "css\\.in\\.js", "i": true }
+  ],
+  "JSS": [
+      { "type": "html", "pattern": "jss", "i": true },
+      { "type": "html", "pattern": "react-jss", "i": true }
+  ],
+  "Glamor": [
+      { "type": "html", "pattern": "glamor", "i": true },
+      { "type": "html", "pattern": "glamorous", "i": true }
+  ],
+  "Aphrodite": [
+      { "type": "html", "pattern": "aphrodite", "i": true },
+      { "type": "html", "pattern": "aphrodite-", "i": true }
+  ],
+  "Fela": [
+      { "type": "html", "pattern": "fela", "i": true },
+      { "type": "html", "pattern": "react-fela", "i": true }
+  ],
+  "Linaria": [
+      { "type": "html", "pattern": "linaria", "i": true },
+      { "type": "html", "pattern": "@linaria/", "i": true }
+  ],
+  "Vanilla Extract": [
+      { "type": "html", "pattern": "vanilla-extract", "i": true },
+      { "type": "html", "pattern": "@vanilla-extract/", "i": true }
+  ],
+  "Panda CSS": [
+      { "type": "html", "pattern": "pandacss", "i": true },
+      { "type": "html", "pattern": "@pandacss/", "i": true }
+  ],
+  "CVA": [
+      { "type": "html", "pattern": "class-variance-authority", "i": true },
+      { "type": "html", "pattern": "cva", "i": true }
+  ],
+  "Tailwind Merge": [
+      { "type": "html", "pattern": "tailwind-merge", "i": true },
+      { "type": "html", "pattern": "clsx", "i": true }
+  ],
+  "Headless CMS": [
+      { "type": "html", "pattern": "headless-cms", "i": true },
+      { "type": "html", "pattern": "headless cms", "i": true }
+  ],
+  "Directus": [
+      { "type": "html", "pattern": "directus", "i": true },
+      { "type": "html", "pattern": "directus\\.io", "i": true }
+  ],
+  "PocketBase": [
+      { "type": "html", "pattern": "pocketbase", "i": true },
+      { "type": "html", "pattern": "pocketbase\\.io", "i": true }
+  ],
+  "Appwrite": [
+      { "type": "html", "pattern": "appwrite", "i": true },
+      { "type": "html", "pattern": "appwrite\\.io", "i": true }
+  ],
+  "Nhost": [
+      { "type": "html", "pattern": "nhost", "i": true },
+      { "type": "html", "pattern": "nhost\\.io", "i": true }
+  ],
+  "Xata": [
+      { "type": "html", "pattern": "xata", "i": true },
+      { "type": "html", "pattern": "xata\\.io", "i": true }
+  ],
+  "Neon": [
+      { "type": "html", "pattern": "neon", "i": true },
+      { "type": "html", "pattern": "neon\\.tech", "i": true }
+  ],
+  "CockroachDB": [
+      { "type": "html", "pattern": "cockroachdb", "i": true },
+      { "type": "html", "pattern": "cockroachlabs\\.com", "i": true }
+  ],
+  "ScyllaDB": [
+      { "type": "html", "pattern": "scylladb", "i": true },
+      { "type": "html", "pattern": "scylla\\.io", "i": true }
+  ],
+  "TimescaleDB": [
+      { "type": "html", "pattern": "timescaledb", "i": true },
+      { "type": "html", "pattern": "timescale\\.com", "i": true }
+  ],
+  "InfluxDB": [
+      { "type": "html", "pattern": "influxdb", "i": true },
+      { "type": "html", "pattern": "influxdata\\.com", "i": true }
+  ],
+  "ClickHouse": [
+      { "type": "html", "pattern": "clickhouse", "i": true },
+      { "type": "html", "pattern": "clickhouse\\.io", "i": true }
+  ],
+  "Apache Kafka": [
+      { "type": "html", "pattern": "kafka", "i": true },
+      { "type": "html", "pattern": "apache\\.kafka", "i": true }
+  ],
+  "RabbitMQ": [
+      { "type": "html", "pattern": "rabbitmq", "i": true },
+      { "type": "html", "pattern": "rabbitmq\\.com", "i": true }
+  ],
+  "Apache Pulsar": [
+      { "type": "html", "pattern": "pulsar", "i": true },
+      { "type": "html", "pattern": "apache\\.pulsar", "i": true }
+  ],
+  "NATS": [
+      { "type": "html", "pattern": "nats", "i": true },
+      { "type": "html", "pattern": "nats\\.io", "i": true }
+  ],
+  "ZeroMQ": [
+      { "type": "html", "pattern": "zeromq", "i": true },
+      { "type": "html", "pattern": "0mq", "i": true }
+  ],
+  "Apache Thrift": [
+      { "type": "html", "pattern": "thrift", "i": true },
+      { "type": "html", "pattern": "apache\\.thrift", "i": true }
+  ],
+  "Protocol Buffers": [
+      { "type": "html", "pattern": "protobuf", "i": true },
+      { "type": "html", "pattern": "proto3", "i": true }
+  ],
+  "Apache Avro": [
+      { "type": "html", "pattern": "avro", "i": true },
+      { "type": "html", "pattern": "apache\\.avro", "i": true }
+  ],
+  "REST API": [
+      { "type": "header", "pattern": "Content-Type: application/json", "i": true },
+      { "type": "html", "pattern": "api/", "i": true }
+  ],
+  "SOAP": [
+      { "type": "header", "pattern": "Content-Type: application/soap+xml", "i": true },
+      { "type": "html", "pattern": "soap", "i": true },
+      { "type": "html", "pattern": "wsdl", "i": true }
+  ],
+  "XML-RPC": [
+      { "type": "html", "pattern": "xml-rpc", "i": true },
+      { "type": "html", "pattern": "xmlrpc", "i": true }
+  ],
+  "JSON-RPC": [
+      { "type": "html", "pattern": "json-rpc", "i": true },
+      { "type": "html", "pattern": "jsonrpc", "i": true }
+  ],
+  "Webhook": [
+      { "type": "html", "pattern": "webhook", "i": true },
+      { "type": "html", "pattern": "webhooks", "i": true }
+  ],
+  "WebSockets": [
+      { "type": "header", "pattern": "Upgrade: websocket", "i": true },
+      { "type": "html", "pattern": "websocket", "i": true },
+      { "type": "html", "pattern": "ws://", "i": true },
+      { "type": "html", "pattern": "wss://", "i": true }
+  ]
+}

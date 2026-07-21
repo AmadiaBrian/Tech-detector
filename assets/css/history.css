@@ -1,0 +1,202 @@
+/* History Page Specific Styles */
+
+/* Base transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Card styles */
+.history-card {
+  @apply bg-white shadow-sm rounded-xl overflow-hidden transition-all duration-300 hover:shadow-md;
+  border: 1px solid rgba(243, 244, 246, 0.8);
+}
+
+/* Table styles */
+.history-table {
+  @apply min-w-full divide-y divide-gray-100;
+}
+
+.history-table thead th {
+  @apply px-6 py-3.5 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider bg-gray-50;
+}
+
+.history-table tbody tr {
+  @apply transition-colors duration-200 hover:bg-gray-50/80;
+}
+
+.history-table tbody td {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-gray-700;
+}
+
+/* Status badges */
+.status-badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.status-badge.scanned {
+  @apply bg-green-100 text-green-800;
+}
+
+.status-badge.pending {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+/* Action buttons */
+.action-btn {
+  @apply p-1.5 rounded-full transition-colors duration-200;
+}
+
+.action-btn.view {
+  @apply text-indigo-600 hover:text-indigo-900 hover:bg-indigo-50;
+}
+
+.action-btn.delete {
+  @apply text-gray-400 hover:text-red-600 hover:bg-red-50;
+}
+
+/* Pagination */
+.pagination {
+  @apply relative z-0 inline-flex rounded-md shadow-sm -space-x-px;
+}
+
+.pagination-link {
+  @apply relative inline-flex items-center px-4 py-2 border text-sm font-medium transition-colors duration-150;
+}
+
+.pagination-link:not(.active):not(.disabled) {
+  @apply bg-white border-gray-200 text-gray-500 hover:bg-gray-50 hover:text-indigo-600;
+}
+
+.pagination-link.active {
+  @apply z-10 bg-gradient-to-br from-indigo-600 to-indigo-700 border-indigo-600 text-white shadow-sm;
+}
+
+.pagination-link.disabled {
+  @apply bg-gray-50 text-gray-300 cursor-not-allowed;
+}
+
+/* Empty state */
+.empty-state {
+  @apply text-center py-16 px-4 transition-all duration-300 transform hover:scale-[1.01];
+}
+
+.empty-state-icon {
+  @apply mx-auto flex items-center justify-center h-24 w-24 rounded-full bg-indigo-50 mb-4;
+}
+
+/* Search form */
+.search-form {
+  @apply space-y-4;
+}
+
+.search-input-wrapper {
+  @apply relative rounded-lg shadow-sm transition-all duration-300 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-opacity-50;
+}
+
+.search-input {
+  @apply block w-full pl-10 pr-4 py-2.5 text-sm border border-gray-200 rounded-lg bg-white focus:ring-2 focus:ring-indigo-100 focus:border-indigo-300 transition duration-150 ease-in-out;
+}
+
+/* Modal */n.modal-overlay {
+  @apply fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity;
+}
+
+.modal-content {
+  @apply inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .history-table thead {
+    @apply hidden;
+  }
+  
+  .history-table tbody tr {
+    @apply block mb-4 border border-gray-100 rounded-lg overflow-hidden;
+  }
+  
+  .history-table tbody td {
+    @apply block px-4 py-2 text-sm text-gray-700 border-b border-gray-100 last:border-b-0;
+  }
+  
+  .history-table tbody td:before {
+    content: attr(data-label);
+    @apply block text-xs font-medium text-gray-500 uppercase tracking-wider;
+  }
+}
+
+/* Animation for loading state */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Enhance form controls */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm transition duration-150 ease-in-out;
+}
+
+/* Button styles */
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800;
+}
+
+.btn-secondary {
+  @apply bg-gray-100 text-gray-700 hover:bg-gray-200;
+}
+
+/* Utility classes */
+.shadow-hover {
+  @apply transition-shadow duration-300 hover:shadow-md;
+}
+
+.scale-hover {
+  @apply transition-transform duration-200 hover:scale-105;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full hover:bg-gray-400;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    @apply bg-white text-black;
+  }
+  
+  .history-table {
+    @apply w-full border-collapse;
+  }
+  
+  .history-table th,
+  .history-table td {
+    @apply border border-gray-300 p-2;
+  }
+}
