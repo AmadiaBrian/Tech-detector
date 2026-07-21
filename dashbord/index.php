@@ -350,10 +350,10 @@ if ($tableCheck) {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
-        /* Show hamburger only on mobile */
+        /* Hide hamburger on mobile */
         @media (max-width: 767px) {
             .hamburger {
-                display: flex;
+                display: none;
             }
         }
         
@@ -425,7 +425,7 @@ if ($tableCheck) {
         
         @media (max-width: 992px) {
             .hamburger {
-                display: block;
+                display: none;
             }
             
             #sidebar {
@@ -436,6 +436,33 @@ if ($tableCheck) {
             
             #sidebar.mobile-active {
                 transform: translateX(0);
+            }
+            
+            .gsc-sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                z-index: 1000;
+            }
+            
+            .gsc-sidebar.gsc-sidebar-mobile-open {
+                transform: translateX(0);
+            }
+            
+            .gsc-main-wrapper {
+                margin-left: 0;
+            }
+            
+            .gsc-topbar {
+                display: flex;
+            }
+            
+            .gsc-sidebar-toggle {
+                display: flex !important;
+                z-index: 1002;
             }
             
             body.menu-open {

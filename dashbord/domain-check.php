@@ -266,12 +266,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['domain'])) {
         }
         .card {
             background: #000000;
-            border: 1px solid #3c4043;
+            border: 1px solid #3c403;
             border-radius: 8px;
         }
         input[type="text"] {
             background-color: #1a1a1a;
-            border-color: #3c4043;
+            border: 2px solid #3c4043;
             color: #ffffff;
         }
         input[type="text"]:focus {
@@ -295,6 +295,77 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['domain'])) {
         }
         .bg-red-50 {
             background-color: rgba(255, 107, 0, 0.1) !important;
+        }
+        .border-red-500 {
+            border-color: #ef4444 !important;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 992px) {
+            .gsc-sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                z-index: 1000;
+            }
+            
+            .gsc-sidebar.gsc-sidebar-mobile-open {
+                transform: translateX(0);
+            }
+            
+            .gsc-main-wrapper {
+                margin-left: 0;
+            }
+            
+            .gsc-topbar {
+                padding: 0.75rem 1rem;
+            }
+            
+            .gsc-sidebar-toggle {
+                display: flex !important;
+                border: none;
+                border-radius: 8px;
+                width: 44px;
+                height: 44px;
+                margin-right: 12px;
+                color: #9aa0a6;
+            }
+            
+            .gsc-sidebar-toggle:hover {
+                background: #2d2d2d;
+                color: #ffffff;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .card {
+                padding: 15px;
+                margin: 10px;
+            }
+            
+            input[type="text"] {
+                font-size: 16px; /* Prevent zoom on iOS */
+            }
+            
+            button, .btn {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .col-span-2 {
+                grid-column: span 1;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
         }
         .border-red-500 {
             border-color: #ff6b00 !important;
@@ -400,17 +471,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['domain'])) {
                     </div>
                 </div>
                 <div class="mt-4">
-                    <form method="POST" class="flex">
+                    <form method="POST" class="flex flex-col">
                         <input 
                             type="text" 
                             name="domain" 
                             value="<?php echo htmlspecialchars($domain); ?>"
-                            class="flex-1 px-4 py-2 rounded-l-lg text-gray-800 focus:outline-none" 
+                            class="flex-1 px-4 py-2 rounded-lg text-gray-800 focus:outline-none mb-2" 
                             placeholder="Enter domain (e.g., example.com)"
                             required>
                         <button 
                             type="submit" 
-                            class="bg-indigo-700 hover:bg-indigo-800 px-6 py-2 rounded-r-lg font-medium transition-colors">
+                            class="bg-indigo-700 hover:bg-indigo-800 px-6 py-2 rounded-lg font-medium transition-colors">
                             <i class="fas fa-search mr-2"></i>Check
                         </button>
                     </form>
@@ -2607,45 +2678,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['domain'])) {
     </script>
     
     <script src="../assets/js/main.js"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const sidebarToggle = document.getElementById('sidebarToggle');
-        const sidebar = document.getElementById('gscSidebar');
-        
-        if (sidebarToggle && sidebar) {
-            sidebarToggle.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Check if we're on mobile or desktop
-                if (window.innerWidth <= 992) {
-                    // Mobile: toggle mobile-open class
-                    sidebar.classList.toggle('gsc-sidebar-mobile-open');
-                    
-                    if (sidebar.classList.contains('gsc-sidebar-mobile-open')) {
-                        document.body.style.overflow = 'hidden';
-                    } else {
-                        document.body.style.overflow = '';
-                    }
-                } else {
-                    // Desktop: toggle collapsed class
-                    sidebar.classList.toggle('gsc-sidebar-collapsed');
-                }
-            });
-        }
-
-        document.addEventListener('click', function(e) {
-            const sidebar = document.getElementById('gscSidebar');
-            const sidebarToggle = document.getElementById('sidebarToggle');
-            
-            if (sidebar && sidebarToggle) {
-                if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target) && sidebar.classList.contains('gsc-sidebar-mobile-open')) {
-                    sidebar.classList.remove('gsc-sidebar-mobile-open');
-                    document.body.style.overflow = '';
-                }
-            }
-        });
-    });
-    </script>
     
     <style>
     /* Add some spacing between sections */

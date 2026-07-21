@@ -63,6 +63,140 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 background-color: var(--surface-hover) !important;
             }
         }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 992px) {
+            .gsc-sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                z-index: 1000;
+            }
+            
+            .gsc-sidebar.gsc-sidebar-mobile-open {
+                transform: translateX(0);
+            }
+            
+            .gsc-main-wrapper {
+                margin-left: 0;
+            }
+            
+            .gsc-topbar {
+                padding: 0.75rem 1rem;
+            }
+            
+            .gsc-sidebar-toggle {
+                display: flex !important;
+                z-index: 1002;
+            }
+        }
+
+        /* Force hamburger button to be visible */
+        .gsc-sidebar-toggle {
+            display: flex !important;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        
+        .gsc-sidebar-toggle:hover {
+            transform: scale(1.05);
+        }
+        
+        .gsc-sidebar-toggle:active {
+            transform: scale(0.95);
+        }
+        
+        /* Mobile overlay */
+        .gsc-sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gsc-sidebar-overlay.active {
+            display: block;
+            opacity: 1;
+        }
+        
+        /* Desktop sidebar collapse functionality */
+        .gsc-sidebar {
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+        
+        .gsc-sidebar.gsc-sidebar-collapsed {
+            width: 72px;
+        }
+        
+        .gsc-sidebar.gsc-sidebar-collapsed .gsc-nav-item span,
+        .gsc-sidebar.gsc-sidebar-collapsed .gsc-nav-section-title,
+        .gsc-sidebar.gsc-sidebar-collapsed .gsc-logo span {
+            opacity: 0;
+            width: 0;
+            overflow: hidden;
+            transition: opacity 0.2s ease 0.1s, width 0.2s ease 0.1s;
+        }
+        
+        .gsc-sidebar.gsc-sidebar-collapsed .gsc-logo {
+            justify-content: center;
+            padding: 20px 16px;
+        }
+        
+        .gsc-sidebar.gsc-sidebar-collapsed .gsc-nav-item {
+            justify-content: center;
+            padding: 14px 12px;
+        }
+        
+        .gsc-sidebar.gsc-sidebar-collapsed .gsc-nav-item i {
+            font-size: 20px;
+        }
+        
+        .gsc-main-wrapper {
+            transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .gsc-sidebar.gsc-sidebar-collapsed ~ .gsc-main-wrapper {
+            margin-left: 72px;
+        }
+        
+        /* Tooltip for collapsed sidebar items */
+        .gsc-sidebar.gsc-sidebar-collapsed .gsc-nav-item {
+            position: relative;
+        }
+        
+        .gsc-sidebar.gsc-sidebar-collapsed .gsc-nav-item::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #2d2d2d;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s, visibility 0.2s;
+            margin-left: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+        
+        .gsc-sidebar.gsc-sidebar-collapsed .gsc-nav-item:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
     </style>
     
 <body>
@@ -78,15 +212,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <nav class="gsc-sidebar-nav">
             <div class="gsc-nav-section">
                 <div class="gsc-nav-section-title">Overview</div>
-                <a href="" class="gsc-nav-item active">
+                <a href="" class="gsc-nav-item active" data-tooltip="Home">
                     <i class="fas fa-home"></i>
                     <span>Home</span>
                 </a>
-                <a href="#features" class="gsc-nav-item">
+                <a href="#features" class="gsc-nav-item" data-tooltip="Features">
                     <i class="fas fa-star"></i>
                     <span>Features</span>
                 </a>
-                <a href="#how-it-works" class="gsc-nav-item">
+                <a href="#how-it-works" class="gsc-nav-item" data-tooltip="How It Works">
                     <i class="fas fa-cog"></i>
                     <span>How It Works</span>
                 </a>
@@ -95,16 +229,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="gsc-nav-section">
                 <div class="gsc-nav-section-title">Account</div>
                 <?php if (isLoggedIn()): ?>
-                    <a href="dashbord" class="gsc-nav-item">
+                    <a href="dashbord" class="gsc-nav-item" data-tooltip="Dashboard">
                         <i class="fas fa-chart-line"></i>
                         <span>Dashboard</span>
                     </a>
-                    <a href="api/logout" class="gsc-nav-item">
+                    <a href="api/logout" class="gsc-nav-item" data-tooltip="Logout">
                         <i class="fas fa-sign-out-alt"></i>
                         <span>Logout</span>
                     </a>
                 <?php else: ?>
-                    <a href="login" class="gsc-nav-item">
+                    <a href="login" class="gsc-nav-item" data-tooltip="Sign in">
                         <i class="fas fa-sign-in-alt"></i>
                         <span>Sign in</span>
                     </a>
@@ -112,6 +246,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </nav>
     </aside>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="gsc-sidebar-overlay" id="sidebarOverlay"></div>
 
     <!-- Main Content Wrapper -->
     <div class="gsc-main-wrapper">
@@ -416,47 +553,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="assets/js/main.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Sidebar toggle functionality
-        const sidebarToggle = document.getElementById('sidebarToggle');
-        const sidebar = document.getElementById('gscSidebar');
-        
-        console.log('Sidebar toggle:', sidebarToggle);
-        console.log('Sidebar:', sidebar);
-        
-        if (sidebarToggle && sidebar) {
-            sidebarToggle.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Check if we're on mobile or desktop
-                if (window.innerWidth <= 992) {
-                    // Mobile: toggle mobile-open class
-                    sidebar.classList.toggle('gsc-sidebar-mobile-open');
-                    
-                    if (sidebar.classList.contains('gsc-sidebar-mobile-open')) {
-                        document.body.style.overflow = 'hidden';
-                    } else {
-                        document.body.style.overflow = '';
-                    }
-                } else {
-                    // Desktop: toggle collapsed class
-                    sidebar.classList.toggle('gsc-sidebar-collapsed');
-                }
-            });
-        }
-
-        // Close sidebar when clicking outside on mobile
-        document.addEventListener('click', function(e) {
-            const sidebar = document.getElementById('gscSidebar');
-            const sidebarToggle = document.getElementById('sidebarToggle');
-            
-            if (sidebar && sidebarToggle) {
-                if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target) && sidebar.classList.contains('gsc-sidebar-mobile-open')) {
-                    sidebar.classList.remove('gsc-sidebar-mobile-open');
-                    document.body.style.overflow = '';
-                }
-            }
-        });
-
         const form = document.getElementById('scan-form');
         const button = form ? form.querySelector('button[type="submit"]') : null;
         

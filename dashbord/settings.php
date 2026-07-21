@@ -106,6 +106,68 @@ $timezones = DateTimeZone::listIdentifiers(DateTimeZone::ALL);
         label {
             color: #d1d5db;
         }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 992px) {
+            .gsc-sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                z-index: 1000;
+            }
+            
+            .gsc-sidebar.gsc-sidebar-mobile-open {
+                transform: translateX(0);
+            }
+            
+            .gsc-main-wrapper {
+                margin-left: 0;
+            }
+            
+            .gsc-topbar {
+                padding: 0.75rem 1rem;
+            }
+            
+            .gsc-sidebar-toggle {
+                display: flex !important;
+                border: none;
+                border-radius: 8px;
+                width: 44px;
+                height: 44px;
+                margin-right: 12px;
+                color: #9aa0a6;
+            }
+            
+            .gsc-sidebar-toggle:hover {
+                background: #2d2d2d;
+                color: #ffffff;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .settings-section {
+                margin-bottom: 1rem;
+            }
+            
+            .settings-section-header {
+                padding: 1rem;
+            }
+            
+            .settings-section-body {
+                padding: 1rem;
+            }
+            
+            input, select {
+                font-size: 16px; /* Prevent zoom on iOS */
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+        }
     </style>
 </head>
 <body class="bg-black font-sans antialiased">
@@ -275,44 +337,5 @@ $timezones = DateTimeZone::listIdentifiers(DateTimeZone::ALL);
     </div>
 
     <script src="../assets/js/main.js"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const sidebarToggle = document.getElementById('sidebarToggle');
-        const sidebar = document.getElementById('gscSidebar');
-        
-        if (sidebarToggle && sidebar) {
-            sidebarToggle.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Check if we're on mobile or desktop
-                if (window.innerWidth <= 992) {
-                    // Mobile: toggle mobile-open class
-                    sidebar.classList.toggle('gsc-sidebar-mobile-open');
-                    
-                    if (sidebar.classList.contains('gsc-sidebar-mobile-open')) {
-                        document.body.style.overflow = 'hidden';
-                    } else {
-                        document.body.style.overflow = '';
-                    }
-                } else {
-                    // Desktop: toggle collapsed class
-                    sidebar.classList.toggle('gsc-sidebar-collapsed');
-                }
-            });
-        }
-
-        document.addEventListener('click', function(e) {
-            const sidebar = document.getElementById('gscSidebar');
-            const sidebarToggle = document.getElementById('sidebarToggle');
-            
-            if (sidebar && sidebarToggle) {
-                if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target) && sidebar.classList.contains('gsc-sidebar-mobile-open')) {
-                    sidebar.classList.remove('gsc-sidebar-mobile-open');
-                    document.body.style.overflow = '';
-                }
-            }
-        });
-    });
-    </script>
 </body>
 </html>

@@ -218,17 +218,41 @@ document.addEventListener('DOMContentLoaded', () => {
   // Sidebar toggle functionality
   const sidebarToggle = document.getElementById('sidebarToggle');
   const sidebar = document.getElementById('gscSidebar');
+  const sidebarOverlay = document.getElementById('sidebarOverlay');
   
   if (sidebarToggle && sidebar) {
-    sidebarToggle.addEventListener('click', function() {
-      sidebar.classList.toggle('gsc-sidebar-mobile-open');
+    sidebarToggle.addEventListener('click', function(e) {
+      e.preventDefault();
       
-      // Prevent body scroll when sidebar is open on mobile
-      if (sidebar.classList.contains('gsc-sidebar-mobile-open')) {
-        document.body.style.overflow = 'hidden';
+      // Check if we're on mobile or desktop
+      if (window.innerWidth <= 992) {
+        // Mobile: toggle mobile-open class
+        sidebar.classList.toggle('gsc-sidebar-mobile-open');
+        
+        if (sidebar.classList.contains('gsc-sidebar-mobile-open')) {
+          document.body.style.overflow = 'hidden';
+          if (sidebarOverlay) {
+            sidebarOverlay.classList.add('active');
+          }
+        } else {
+          document.body.style.overflow = '';
+          if (sidebarOverlay) {
+            sidebarOverlay.classList.remove('active');
+          }
+        }
       } else {
-        document.body.style.overflow = '';
+        // Desktop: toggle collapsed class
+        sidebar.classList.toggle('gsc-sidebar-collapsed');
       }
+    });
+  }
+
+  // Close sidebar when clicking overlay on mobile
+  if (sidebarOverlay) {
+    sidebarOverlay.addEventListener('click', function() {
+      sidebar.classList.remove('gsc-sidebar-mobile-open');
+      document.body.style.overflow = '';
+      sidebarOverlay.classList.remove('active');
     });
   }
 
@@ -241,6 +265,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target) && sidebar.classList.contains('gsc-sidebar-mobile-open')) {
         sidebar.classList.remove('gsc-sidebar-mobile-open');
         document.body.style.overflow = '';
+        if (sidebarOverlay) {
+          sidebarOverlay.classList.remove('active');
+        }
       }
     }
   });

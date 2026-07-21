@@ -287,6 +287,77 @@ $stats = fetch(
             background-color: #2a2a2a;
             color: #6b7280;
         }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 992px) {
+            .gsc-sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                z-index: 1000;
+            }
+            
+            .gsc-sidebar.gsc-sidebar-mobile-open {
+                transform: translateX(0);
+            }
+            
+            .gsc-main-wrapper {
+                margin-left: 0;
+            }
+            
+            .gsc-topbar {
+                padding: 0.75rem 1rem;
+            }
+            
+            .gsc-sidebar-toggle {
+                display: flex !important;
+                border: none;
+                border-radius: 8px;
+                width: 44px;
+                height: 44px;
+                margin-right: 12px;
+                color: #9aa0a6;
+            }
+            
+            .gsc-sidebar-toggle:hover {
+                background: #2d2d2d;
+                color: #ffffff;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .lg\:col-span-2 {
+                grid-column: span 1;
+            }
+            
+            .profile-header {
+                padding: 1rem;
+            }
+            
+            .profile-body {
+                padding: 1rem;
+            }
+            
+            .avatar-upload img {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .stat-card {
+                padding: 0.75rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+        }
     </style>
 </head>
 <body class="bg-black font-sans antialiased">
@@ -473,43 +544,6 @@ $stats = fetch(
 
     <script src="../assets/js/main.js"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const sidebarToggle = document.getElementById('sidebarToggle');
-        const sidebar = document.getElementById('gscSidebar');
-        
-        if (sidebarToggle && sidebar) {
-            sidebarToggle.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Check if we're on mobile or desktop
-                if (window.innerWidth <= 992) {
-                    // Mobile: toggle mobile-open class
-                    sidebar.classList.toggle('gsc-sidebar-mobile-open');
-                    
-                    if (sidebar.classList.contains('gsc-sidebar-mobile-open')) {
-                        document.body.style.overflow = 'hidden';
-                    } else {
-                        document.body.style.overflow = '';
-                    }
-                } else {
-                    // Desktop: toggle collapsed class
-                    sidebar.classList.toggle('gsc-sidebar-collapsed');
-                }
-            });
-        }
-
-        document.addEventListener('click', function(e) {
-            const sidebar = document.getElementById('gscSidebar');
-            const sidebarToggle = document.getElementById('sidebarToggle');
-            
-            if (sidebar && sidebarToggle) {
-                if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target) && sidebar.classList.contains('gsc-sidebar-mobile-open')) {
-                    sidebar.classList.remove('gsc-sidebar-mobile-open');
-                    document.body.style.overflow = '';
-                }
-            }
-        });
-
         // Function to validate username format
         function isValidUsername(username) {
             if (username.length < 3) {

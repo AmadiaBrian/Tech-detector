@@ -126,12 +126,70 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image'])) {
             border-color: #ff6b00;
         }
         .btn-primary:hover {
-            background-color: #e65a00;
+            background-color: # #e65a00;
             border-color: #e65a00;
         }
         .alert-danger {
             background-color: rgba(255, 107, 0, 0.1);
             border-color: #ff6b00;
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 992px) {
+            .gsc-sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                z-index: 1000;
+            }
+            
+            .gsc-sidebar.gsc-sidebar-mobile-open {
+                transform: translateX(0);
+            }
+            
+            .gsc-main-wrapper {
+                margin-left: 0;
+            }
+            
+            .gsc-topbar {
+                padding: 0.75rem 1rem;
+            }
+            
+            .gsc-sidebar-toggle {
+                display: flex !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .card {
+                padding: 15px;
+                margin: 10px;
+            }
+            
+            .card-header {
+                padding: 1rem;
+            }
+            
+            .form-control {
+                font-size: 16px; /* Prevent zoom on iOS */
+            }
+            
+            .btn-primary {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            
+            .alert {
+                padding: 0.75rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
             color: #ff6b00;
         }
         .alert-warning {

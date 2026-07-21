@@ -11,3 +11,9 @@ RewriteRule ^$ index.php [L]
 # Redirect direct .php access to clean URL (optional)
 RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
 RewriteRule ^ %1 [L,R=301]
+
+# Custom 404 Error Page
+ErrorDocument 404 /404.php
+
+# Custom 403 Error Page
+ErrorDocument 403 /403.php

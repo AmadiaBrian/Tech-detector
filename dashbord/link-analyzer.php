@@ -947,9 +947,91 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['url'])) {
         .header p {
             margin: 5px 0 0;
             opacity: 0.9;
-            font-size: 0.95rem;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 992px) {
+            .gsc-sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                z-index: 1000;
+            }
+            
+            .gsc-sidebar.gsc-sidebar-mobile-open {
+                transform: translateX(0);
+            }
+            
+            .gsc-main-wrapper {
+                margin-left: 0;
+            }
+            
+            .gsc-topbar {
+                padding: 0.75rem 1rem;
+            }
+            
+            .gsc-sidebar-toggle {
+                display: flex !important;
+                border: none;
+                border-radius: 8px;
+                width: 44px;
+                height: 44px;
+                margin-right: 12px;
+                color: #9aa0a6;
+            }
+            
+            .gsc-sidebar-toggle:hover {
+                background: #2d2d2d;
+                color: #ffffff;
+            }
         }
         
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+            
+            .header {
+                padding: 1.5rem 1rem;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .header p {
+                font-size: 0.9rem;
+                color: #9ca3af;
+                padding: 0 1rem;
+            }
+            
+            .form-group {
+                margin-bottom: 15px;
+            }
+            
+            input[type="text"],
+            input[type="url"],
+            textarea {
+                font-size: 16px; /* Prevent zoom on iOS */
+            }
+            
+            button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            
+            .form-container {
+                margin: 0 1rem 1rem;
+                padding: 1.5rem;
+            }
+        }
         .form-container {
             background: #000000;
             padding: 25px;
@@ -1091,7 +1173,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['url'])) {
     </header>
     
     <div class="form-container">
-        <form method="post" class="d-flex gap-2">
+        <form method="post" class="flex flex-col gap-2">
             <div class="form-group flex-grow-1">
                 <input type="url" id="url" name="url" 
                        class="form-control"
@@ -1408,45 +1490,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['url'])) {
     </script>
     
     <script src="../assets/js/main.js"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const sidebarToggle = document.getElementById('sidebarToggle');
-        const sidebar = document.getElementById('gscSidebar');
-        
-        if (sidebarToggle && sidebar) {
-            sidebarToggle.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Check if we're on mobile or desktop
-                if (window.innerWidth <= 992) {
-                    // Mobile: toggle mobile-open class
-                    sidebar.classList.toggle('gsc-sidebar-mobile-open');
-                    
-                    if (sidebar.classList.contains('gsc-sidebar-mobile-open')) {
-                        document.body.style.overflow = 'hidden';
-                    } else {
-                        document.body.style.overflow = '';
-                    }
-                } else {
-                    // Desktop: toggle collapsed class
-                    sidebar.classList.toggle('gsc-sidebar-collapsed');
-                }
-            });
-        }
-
-        document.addEventListener('click', function(e) {
-            const sidebar = document.getElementById('gscSidebar');
-            const sidebarToggle = document.getElementById('sidebarToggle');
-            
-            if (sidebar && sidebarToggle) {
-                if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target) && sidebar.classList.contains('gsc-sidebar-mobile-open')) {
-                    sidebar.classList.remove('gsc-sidebar-mobile-open');
-                    document.body.style.overflow = '';
-                }
-            }
-        });
-    });
-    </script>
         </div>
         </main>
     </div>

@@ -1,0 +1,17 @@
+[21-Jul-2026 18:33:56 Europe/Berlin] 
+=== Login attempt started ===
+[21-Jul-2026 18:33:56 Europe/Berlin] Login function called with username: otienobrian029@gmail.com
+[21-Jul-2026 18:33:56 Europe/Berlin] PHP Version: 8.2.12
+[21-Jul-2026 18:33:56 Europe/Berlin] Current directory: C:\xampp\htdocs\SCAN\includes
+[21-Jul-2026 18:33:56 Europe/Berlin] User lookup completed. User found: Yes
+[21-Jul-2026 18:33:56 Europe/Berlin] User data: Array
+(
+    [id] => 5
+    [username] => Brian Onyango
+    [email] => otienobrian029@gmail.com
+    [password_hash] => $2y$10$kyDb9hKU45ILUmce8XEEK.XbIi6e90785SKRGm/OHN84pTB4NI8xO
+    [is_verified] => 1
+)
+
+[21-Jul-2026 18:33:56 Europe/Berlin] Password verification: Success
+[21-Jul-2026 18:33:56 Europe/Berlin] Account verified: Yes
